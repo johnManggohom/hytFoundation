@@ -40,5 +40,6 @@ header {
 .container-local {
   width: 80%;
   margin: 0 auto;
+  color: blue;
 }
 /* END OF GENERAL STYLING */
