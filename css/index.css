@@ -58,3 +58,13 @@ main .hero {
   font-size: 0.8rem;
   margin: 0 auto;
 }
+
+.dreamacademy-text {
+  font-family: "Poppins", sans-serif;
+}
+
+.dream-desc {
+  width: 70%;
+  font-size: 0.9rem;
+  margin: 0 auto;
+}
