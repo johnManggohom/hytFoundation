@@ -62,12 +62,3 @@ main .hero {
   font-size: 0.8rem;
   margin: 0 auto;
 }
-
-.dreamacademy p {
-  position: relative;
-}
-
-.dream-desc {
-  text-align: left;
-  width: 10px;
-}

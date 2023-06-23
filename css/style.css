@@ -83,3 +83,12 @@ header {
   margin: -950px 0 0 0;
   z-index: -1;
 }
+
+/* DREAM ACADEMY TEXT STYLING */
+.dream-desc {
+  text-align: justify;
+}
+
+.dreamacademy {
+  position: relative;
+}
