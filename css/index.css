@@ -63,18 +63,11 @@ main .hero {
   margin: 0 auto;
 }
 
-.dreamacademy {
-  font-family: "Poppins", sans-serif;
-  margin: 100px;
-  text-align: left;
-}
-
-h1 {
-  padding-left: 200px;
+.dreamacademy p {
+  position: relative;
 }
 
 .dream-desc {
-  width: 70%;
-  font-size: 0.9rem;
-  margin: 0 auto;
+  text-align: left;
+  width: 10px;
 }

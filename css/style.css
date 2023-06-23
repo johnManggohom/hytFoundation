@@ -59,3 +59,27 @@ header {
   height: 1rem;
   padding-right: 7px;
 }
+
+/* BACKGROUND CIRCLES */
+.bg-circles {
+  position: relative;
+  z-index: -1;
+}
+
+.blue {
+  float: left;
+  margin: 0 100px 0 0;
+  z-index: -1;
+}
+
+.yellow {
+  float:right;
+  margin: -950px 220px 0 0;
+  z-index: -1;
+}
+
+.red {
+  float: right;
+  margin: -950px 0 0 0;
+  z-index: -1;
+}
