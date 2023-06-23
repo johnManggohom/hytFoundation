@@ -1,3 +1,7 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .section-hero {
   min-height: 100vh;
   position: relative;
@@ -63,7 +67,6 @@ main .hero {
   font-family: "Poppins", sans-serif;
   margin: 100px;
   text-align: left;
-
 }
 
 h1 {

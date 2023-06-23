@@ -43,3 +43,19 @@ header {
 /* END OF GENERAL STYLING */
 
 
+/* FOOTER SOCIAL MEDIA ICONS */
+.footer-social-media-icons {
+  width: 210px;
+  height: 0;
+}
+
+.footer-social-media-icons td {
+  text-align: left;
+  vertical-align: top;
+}
+
+.footer-social-media-icons svg {
+  width: auto;
+  height: 1rem;
+  padding-right: 7px;
+}
