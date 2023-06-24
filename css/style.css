@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 
-body {
+body, main {
   font-family: "Poppins", sans-serif;
 }
 
@@ -61,34 +61,69 @@ header {
 }
 
 /* BACKGROUND CIRCLES */
-.bg-circles {
-  position: relative;
+.bg-circles, .blue svg, .yellow svg, .red svg {
+  position: absolute;
+  margin-top: -150px;
   z-index: -1;
 }
 
 .blue {
   float: left;
   margin: 0 100px 0 0;
-  z-index: -1;
 }
 
 .yellow {
-  float:right;
-  margin: -950px 220px 0 0;
-  z-index: -1;
+  float: left;
+  margin: 0 30px 0 200px;
 }
 
 .red {
   float: right;
-  margin: -950px 0 0 0;
-  z-index: -1;
+  margin: 0 0 0 684.5px;
 }
 
 /* DREAM ACADEMY TEXT STYLING */
-.dream-desc {
-  text-align: justify;
+.dreamacademy {
+  width: 1500px;
 }
 
-.dreamacademy {
-  position: relative;
+.dream-desc {
+  width: 800px;
+  text-align: center;
+}
+
+/* TRAINING PROGRAM AND OBJECTIVES STYLING */
+.training-table {
+  width: 1420px;
+  font-family: "Poppins", sans-serif;
+}
+
+.training {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.trainingprogram {
+  text-align: left;
+}
+
+.trainingobjectives {
+  text-align: right;
+}
+
+/* UNITS STYLING */
+.units {
+  width: 1420px;
+}
+
+.unit-img, .unit-img img {
+  width: 600px;
+  height: 330px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 19px;
+}
+
+.unit-img img {
+  border: 1px solid red; /*delete this after... only meant to show the size of the image*/
 }

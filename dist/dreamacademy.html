@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800;900&display=swap" rel="stylesheet">
     <!-- END OF CSS FILES -->
   </head>
 
@@ -121,8 +125,26 @@
       <!-- START OF DREAM ACADEMY PAGE -->
       <main>
 
-        <div class="bg-circles">
+        <br><br>
+        <table class = "dreamacademy container mx-auto">
+          <tr>
+            <td>
+              <p class="text-8xl text-gray-900 font-extrabold text-center py-10">Dream Academy</p>
+            </td>
+          </tr>
 
+          <tr>
+            <td>
+              <p class="dream-desc font-bold text-center mx-auto">
+                Dream Academy is a platform developed through the partnership of Helping Youth Transcend Foundation
+                and the Klassic Solutions Inc. to assist young people in developing their abilities, talents,
+                and gaining experience in preparation for their future careers.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <div class="bg-circles mx-auto">
           <!-- blue circle -->
           <div class="blue">
             <svg width="425" height="953" viewBox="0 0 425 953" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -172,30 +194,121 @@
           </div>
         </div>
         
-        <br><br><br><br><br>  
-        <div class = "dreamacademy container mx-auto">
-          <p class="text-8xl text-gray-900 font-bold">Dream Academy</p>
-        </div>
-        <div class = "container -mx-20">
-          <p class="dream-desc py-10 font-bold">
-            Dream Academy is a platform developed through the partnership of Helping Youth Transcend Foundation
-            and the Klassic Solutions Inc. to assist young people in developing their abilities, talents,
-            and gaining experience in preparation for their future careers.
-          </p>
-        </div>
-
+        <br><br><br><br><br>
+        
         <!-- training part text-->
-        <div class = "trainingprogram container">
-          <p class="text-4xl text-gray-900 font-bold">Training Program and Objectives</p>
-        </div>
+        <table class="training-table mx-auto">
+          <tr>
+            <td class="text-4xl text-gray-900 font-bold">
+              <div class = "training container">
+                Training Program and Objectives
+              </div>
+            </td>
+          </tr>
 
+          <tr>
+            <td><br><br></td>
+          </tr>
 
+          <tr>
+            <td class="text-2xl text-gray-900 font-bold">
+              <div class = "trainingprogram container">
+                Training Program
+              </div>
+            </td>
+          </tr>
 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <tr>
+            <td>
+              <div style="width:800px; text-align:justify; padding-top:10px;">
+                The Dream Academy Training Program consists of working as a trainee mainly under the Klassic Group of Companies and trusted partners and sponsors. 
+                It is a multi-industry company that helps young people to be flexible, adapt, grow and learn successfully.
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><br><br></td>
+          </tr>
+
+          <tr>
+            <td class="text-2xl text-gray-900 font-bold">
+              <div class = "trainingobjectives container">
+                Training Objectives
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div class = "trainingobjectives container" style="text-align:justify; width:800px; float:right; padding-top:10px;">
+                The Dream Academy is dedicated to assisting the younger generation in thriving, developing, and transforming into their best selves. 
+                Since the organization is diversified, with numerous enterprises in different industries, the youth will develop into well-rounded individuals. 
+                HYT Foundation Inc. desires young people to transcend and preserve this generation while pursuing their aspirations.
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <br><br><br><br><br>
+        <!-- UNITS' IMAGES AND DUTIES -->
+        <table class="units mx-auto">
+          <tr>
+            <td class="unit-img px-7" rowspan="2">
+              <img src="">(sample image)<!--delete this text after input of image/s-->
+            </td>
+            <td class="font-bold text-6xl" style="height:50px; padding:0 0 0 0;">
+              <div style="height:20px; width:500px;">
+                Creative Unit
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <ul class="px-7 py-0" style="list-style-type:disc;">
+                <li>Logo</li>
+                <li>Animation</li>
+                <li>Brand sheet</li>
+                <li>Social media posts</li>
+                <li>Portfolio</li>
+                <li>Pitch deck design</li>
+                <li>Video editing</li>
+                <li>Photo editing</li>
+                <li>Mock-up for websites and mobile applications</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td><br><br><br></td>
+          </tr>
+
+          <tr>
+            <td class="unit-img px-7" rowspan="2"><img src="">(sample image)</td><!--delete text after input of image/s-->
+            <td class="font-bold text-6xl" style="height:50px; padding:0 0 0 0;">
+              <div style="height:20px; width:500px;">
+                Human Resource Unit
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <ul class="px-7 py-0" style="list-style-type:disc">
+                <li>Recruitment</li>
+                <li>Research & development of HR management system (HRMS)</li>
+                <li>Create employee engagement programs</li>
+                <li>Assist in learning and development unit</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
       </main>
       <!-- END OF DREAM ACADEMY PAGE -->
     </section>
 
+    <br><br><br>
   <!-- START OF FOOTER -->
   <footer class = "bg-black py-2">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -243,7 +356,7 @@
                   <p class= "text-right mb-1">
                     <table style="width: 100%;">
                       <tr>
-                        <td style="width: 50%; padding-left: 40px;">
+                        <td style="width:50%; padding:0 0 0 30px;">
                           <!-- email icon-->
                           <svg style="width: auto; height: 1rem;" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 2-8.4 7.05a1 1 0 0 1-1.2 0L1 2m18 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1m18 0v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2"/>
