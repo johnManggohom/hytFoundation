@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 
-body {
+body, main {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
@@ -73,3 +73,142 @@ header {
   }
 }
 /* END OF GENERAL STYLING */
+
+
+/* FOOTER SOCIAL MEDIA ICONS */
+.footer-social-media-icons {
+  width: 210px;
+  height: 0;
+}
+
+.footer-social-media-icons td {
+  text-align: left;
+  vertical-align: top;
+}
+
+.footer-social-media-icons svg {
+  width: auto;
+  height: 1rem;
+  padding-right: 7px;
+}
+
+/* BACKGROUND CIRCLES */
+.bg-circles, .blue svg, .yellow svg, .red svg {
+  position: absolute;
+  margin-top: -70px;
+  z-index: -1;
+}
+
+.blue {
+  float: left;
+  margin: 0 100px 0 0;
+}
+
+.yellow {
+  float: left;
+  margin: 0 30px 0 200px;
+}
+
+.red {
+  float: right;
+  margin: 0 0 0 684.5px;
+}
+
+/* DREAM ACADEMY TEXT STYLING */
+.dreamacademy {
+  width: 1500px;
+}
+
+.dream-desc {
+  width: 800px;
+  text-align: center;
+}
+
+/* TRAINING PROGRAM AND OBJECTIVES STYLING */
+.training-table {
+  width: 1420px;
+  font-family: "Poppins", sans-serif;
+}
+
+.training {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.trainingprogram {
+  text-align: left;
+}
+
+.trainingobjectives {
+  text-align: right;
+}
+
+/* UNITS STYLING */
+.units {
+  width: 1420px;
+}
+
+.unit-img, .unit-img img {
+  width: 600px;
+  height: 330px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 19px;
+}
+
+.unit-img img {
+  border: 1px solid red; /*delete this after... only meant to show the size of the image*/
+}
+
+/* JOIN US STYLING */
+.join-table {
+  width: 100px;
+  padding: 0 20px 0 20px;
+}
+
+.join-table td {
+  padding-bottom: 10px;
+}
+
+.join-img, .join-img img {
+  width: 620px;
+  height: 350px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 19px;
+}
+
+.join_map img {
+  text-align: center;
+  height: 360px;
+  width: auto;
+  border: 1px solid red;
+  border-radius: 27px;
+}
+
+/* JOIN US > Contact Details STYLING*/
+.contact-table {
+  width: 1175px;
+}
+
+.contact-table td {
+  background-color: #20ACCB;
+  height: 260px;
+  width: 380px;
+  text-align: center;
+  vertical-align: text-top;
+}
+
+.contact-details {
+  text-align: right;
+  margin: 70px 27px 0 0;
+  color: #FFFFFF;
+}
+
+.image-icon {
+  float: left;
+  padding-left: 20px;
+  vertical-align: top;
+  margin-top: 20px;
+  color: #FFFFFF;
+}
