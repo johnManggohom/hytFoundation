@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 .section-hero {
   min-height: 100vh;
   position: relative;
@@ -48,7 +50,7 @@ main .hero {
 }
 .title-1 {
   font-size: 7rem;
-  font-weight: 900;
+  font-weight: 700;
   margin: 1.5rem 0;
   line-height: 5rem;
 }
@@ -58,3 +60,95 @@ main .hero {
   font-size: 0.8rem;
   margin: 0 auto;
 }
+
+/*Start Vision, Mission */
+.vma {
+  margin: 4rem 0;
+}
+.vma-cards {
+  display: flex;
+  gap: 2rem;
+}
+
+.vma-card {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  background-color: coral;
+}
+
+.vma-card .text {
+  grid-column: 4/7;
+  border: 1px black solid;
+  padding: 1rem;
+  background-color: white;
+}
+
+.vma-cards:nth-child(1) .vma-card .text {
+  background-color: blanchedalmond;
+}
+
+.vma-cards:nth-child(1) .vma-card .empty {
+  grid-column: 1/4;
+  background: rgb(241, 89, 50);
+  background: radial-gradient(
+    circle,
+    rgba(241, 89, 50, 1) 0%,
+    rgba(249, 152, 127, 1) 59%
+  );
+}
+.vma-cards:nth-child(1) .vma-card .empty1 {
+  grid-column: 7/10;
+  background: rgb(35, 58, 230);
+  background: radial-gradient(
+    circle,
+    rgba(35, 58, 230, 1) 0%,
+    rgba(32, 172, 203, 1) 59%
+  );
+}
+
+.vma-cards:nth-child(2) .vma-card .empty {
+  grid-column: 4/7;
+  background: rgb(227, 193, 45);
+  background: radial-gradient(
+    circle,
+    rgba(227, 193, 45, 1) 0%,
+    rgba(255, 233, 136, 1) 59%
+  );
+}
+.vma-card .text h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.text-p {
+  display: flex;
+  text-align: justify;
+  align-items: flex-end;
+}
+
+.vma-cards:nth-child(2) .text:nth-child(1) {
+  grid-column: 1/4;
+  background-color: blanchedalmond;
+}
+.vma-cards:nth-child(2) .text:nth-child(3) {
+  grid-column: 7/10;
+  background-color: blanchedalmond;
+}
+
+/* .vma-card:not(:last-child) {
+  border-right: 2px #f15932 solid;
+}
+.vma-card:not(:last-child) {
+  padding-right: 2rem;
+}
+.vma-card h1 {
+  text-align: center;
+}
+
+.vma-card p {
+  text-align: justify;
+} */
+
+/*End Vision, Mission */
