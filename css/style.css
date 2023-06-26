@@ -139,19 +139,11 @@ header {
 }
 
 .join-img, .join-img img {
-  width: 620px;
-  height: 350px;
+  width: 618px;
+  height: 312px;
   vertical-align: middle;
   text-align: center;
   border-radius: 19px;
-}
-
-.join_map img {
-  text-align: center;
-  height: 360px;
-  width: auto;
-  border: 1px solid red;
-  border-radius: 27px;
 }
 
 /* JOIN US > Contact Details STYLING*/
@@ -179,4 +171,14 @@ header {
   vertical-align: top;
   margin-top: 20px;
   color: #FFFFFF;
+}
+
+.email-icon {
+  margin-left: 13px;
+  margin-top: -50px;
+}
+
+.add-icon {
+  margin-left: 13px;
+  margin-top: -50px;
 }
