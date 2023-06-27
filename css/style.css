@@ -39,6 +39,7 @@ header {
 
 .container-local {
   width: 80%;
+  background-color: transparent;
 }
 /* END OF GENERAL STYLING */
 
@@ -74,13 +75,26 @@ header {
 
 .yellow {
   float: left;
-  margin: 0 50px 0 400px;
+  margin: 0 0 0 220px;
 }
 
 .red {
   float: right;
-  margin: 0 0 0 850.5px;
+  margin: 0 0 0 694.5px;
 }
+
+  .red-trustees1 {
+    float: left;
+    margin: 0 0 0 -720px;
+  }
+  .red-trustees2 {
+    float: left;
+    margin: -350px 0 0 -90px;
+  }
+  .red-trustees3 {
+    float: right;
+    margin: -300px 0 0 0;
+  }
 
 /* DREAM ACADEMY TEXT STYLING */
 .dreamacademy {
@@ -122,10 +136,6 @@ header {
   vertical-align: middle;
   text-align: center;
   border-radius: 19px;
-}
-
-.unit-img img {
-  border: 1px solid red; /*delete this after... only meant to show the size of the image*/
 }
 
 /* JOIN US STYLING */
@@ -186,6 +196,49 @@ header {
 /* BOARD OF TRUSTEES STYLING */
 .trustee-pic {
   width: 578px;
-  height: 778px;
+  height: auto;
+  margin-top: 40px;
+}
+
+.trustee-pic img {
   border-radius: 19px;
+}
+
+.trustee-info p {
+  width: 1100px;
+  text-align: justify;
+}
+
+/* KNOW MORE STYLING */
+.know-more-table {
+  width: 1100px;
+  text-align: center;
+}
+
+.know-more-table, .know-more-table td {
+  text-align: center;
+}
+
+.know-more-table img {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -80px;
+  z-index: 10;
+  border-radius: 100px;
+  border: 10px solid black;
+}
+
+.bg-rectangle-know-more {
+  width: 100%;
+  height: 100px;
+  z-index: -1;
+}
+
+.decor-know-more {
+  width: 100%;
+  height: 7px;
+  z-index: -1;
+  background-color: #dddddd;
 }
