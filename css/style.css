@@ -16,10 +16,16 @@
 
 body, main {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .small-font {
   font-size: 12px;
+  font-weight: 300;
+}
+.title-small-font {
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .green-button {
@@ -39,7 +45,7 @@ header {
 
 .container-local {
   width: 80%;
-  background-color: transparent;
+
 }
 /* END OF GENERAL STYLING */
 
