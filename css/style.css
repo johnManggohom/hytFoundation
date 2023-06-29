@@ -45,8 +45,34 @@ header {
 
 .container-local {
   width: 80%;
-
+  margin: 0 auto;
+  max-width: 1366px;
 }
+
+.explore {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.arrow {
+  font-weight: bold;
+  font-size: 2rem;
+  animation: myanimation 15s infinite;
+}
+
+@keyframes myanimation {
+  0% {
+    color: #f15932;
+  }
+  66% {
+    color: #20accb;
+  }
+  100% {
+    color: #e3c12d;
+  }
+}
+
 /* END OF GENERAL STYLING */
 
 
