@@ -225,7 +225,40 @@ header {
   margin-top: -50px;
 }
 
-/* BOARD OF TRUSTEES STYLING */
+/* BORAD OF TRUSTEES CARDS STYLING */
+.trustees-table {
+  width: 100%;
+}
+
+.trustees-table td {
+  padding: 25px 0 25px 0;
+}
+
+.trustees-table td img {
+  height: 811px;
+  width: 540px;
+}
+
+.trustees-row {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: -90px;
+}
+  
+.trustees-column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.trustees-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* BOARD OF TRUSTEES PROFILE STYLING */
 .trustee-pic {
   width: 578px;
   height: auto;

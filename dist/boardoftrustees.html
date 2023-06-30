@@ -5,149 +5,242 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HYT Foundation</title>
-    
-    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- CSS FILES -->
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js" integrity="sha512-7dlzSK4Ulfm85ypS8/ya0xLf3NpXiML3s6HTLu4qDq7WiJWtLLyrXb9putdP3/1umwTmzIvhuu9EW7gHYSVtCQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800;900&display=swap" rel="stylesheet">
+    <!-- END OF CSS FILES -->
   </head>
-  <body class="bg-whitev text-color-white tracking-wider">   
+
+  <body>
+    <section class="section-dreamacademy">
+      <!-- START OF HEADER -->
       <header>
-        <nav class="container flex justify-between items-center">
-          <div class="w-50 py-5 text-black font-bold text-3x1">
-          <a href="#home">
-        <a href="https://flowbite.com/" class="flex items-center">
-          <img  src="./resources/header/HYT Logo.png" class="h-25 mr-3"  alt="Flowbite Logo" />
-        </a>
-      </div>
-      <ul>
-        <ul class="hidden lg:flex items-center space-x-6">
-          <li><a href="#home" class="hover:text-black ease-in duration-200">HOME</a></li>
-          <li><a href="#about us" class="hover:text-black ease-in duration-200">ABOUT US</a></li>
-          <li><a href="#dream academy" class="hover:text-black ease-in duration-200">DREAM ACADEMY</a></li>
-          <li><a href="#our thrust" class="hover:text-black ease-in duration-200">OUR THRUST</a></li>
-          <li><a href="#contact us" class="hover:text-black ease-in duration-200">CONTACT US</a></li>
-          <button class="bg-lime-500 hover:bg-lime-700 text-white font-bold py-2 px-4 border-b-4 border-x-lime-600 hover:border-x-lime-500">
-            JOIN US
-          </button>
-          <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-            DONATE
-          </button>
-        </ul>
-  </div>
-
-<div>
-  <div id="hamburger" class="lg:hidden cursor-pointer">
-  <i class="fa-solid fa-bars"></i>
-  </div>
-
-
-  <div id="menu" class="hidden bg-color-primary-dark h-[100vh] absolute inset-0">
-    <ul class="h-full grid place-items-center py-20">
-      <li><a id="hLink" href="#home" class="hover:text-black ease-in duration-200">HOME</a></li>
-      <li><a id="hLink" href="#about us" class="hover:text-black ease-in duration-200">ABOUT US</a></li>
-      <li><a id="hLink" href="#dream academy" class="hover:text-black ease-in duration-200">DREAM ACADEMY</a></li>
-      <li><a id="hLink" href="#our thrust" class="hover:text-black ease-in duration-200">OUR THRUST</a></li>
-      <li><a id="hLink" href="#contact us" class="hover:text-black ease-in duration-200">CONTACT US</a></li>
-      <button class="bg-lime-500 hover:bg-lime-700 text-white font-bold py-2 px-4 border-b-4 border-x-lime-600 hover:border-x-lime-500">
-        JOIN US
-      </button>
-      <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-        DONATE
-      </button>  
-    </ul>
-</nav>
-</header>
+        <nav class="container-local py-2">
+          <div
+            class="items-center small-font justify-end hidden w-full gap-2 md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <button
+              class="green-button hover:bg-blue-700 text-white font-bold py-1 px-3 rounded-full"
+            ><a href="join-us.html">JOIN US</a>
+        
+            </button>
+            <button
+              class="black-button hover:bg-blue-700 text-white font-bold py-1 px-3 rounded-full"
+            >
+              DONATE
+            </button>
+          </div>
+          <div class="flex flex-wrap items-center justify-between mx-auto">
+            <div
+              class="items-center text-white small-font justify-between hidden w-full md:flex md:w-auto md:order-1"
+              id="navbar-sticky"
+            >
+              <ul
+                class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="dreamacademy.html"
+                    class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent"
+                    >Dream Academy</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 pl-5"
+              id="navbar-sticky"
+            >
+              <a href="https://flowbite.com/" class="flex items-center">
+                <img
+                  src="../resources/header/HYT Logo.png"
+                  class="h-25 mr-3"
+                  alt="Flowbite Logo"
+                />
+              </a>
+            </div>
+            <div
+              class="items-center small-font justify-between hidden w-full md:flex md:w-auto md:order-1"
+              id="navbar-sticky"
+            >
+              <ul
+                class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent"
+                    >Culture</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent"
+                    >The Team</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent"
+                    >Our Thrust</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 pl-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
 
 <main>
-  <section id="home" class="relative">
-  
-  </section>
-  <section id="features" class="bg-color-primary-light">
+
+  <section class="bg-color-primary-light m-auto">
       <div class="container py-20">
-          <div class="text-center m-auto mb-50 md:w-1/2">
-            <span class="text-2xl font-bold text-slate-1500 dark:text-white">Meet our Board of Trustess</span>    
+          <div class="text-center m-auto mb-20 md:w-3/4">
+            <span class="text-7xl font-extrabold text-slate-1500 dark:text-black">Meet our Board of Trustees</span>
+            <div class="dark:text-black font-medium mx-auto" style="width:750px">Torem ipsum dolor sit amet, consectetur adipiscing elit.Torem ipsum dolor sit amet, consectetur adipiscing elit.</div>
           </div>
-          <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8">
-              <!-- card no 1 -->
-          
-              <div class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
-                  <div class="bg-color-primary-dark inline-block rounded-2xl py-5 px-6">
-                      <i class="fa-solid fa-calendar-days text-4xl"></i>
-                  </div>                
-                  <img src="./resources/header/Ms Heddy.png" class="h-25 mr-3" alt="Flowbite Logo"/>
-                  <h3 class="text-xl font-bold py-4">Miss Heddy Yu Tabao</h3>
-                 
-              </div>
-              <!-- card no 2 -->
-              <div class="bg-color-primary-dark border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer">
-                  <div class="bg-color-primary-dark inline-block rounded-2xl py-5 px-6">
-                      <i class="fa-solid fa-chart-column text-4xl"></i>
+        
+      <div class="trustees-row">
+        <div class="trustees-column">
+          <table class="trustees-table">
+            <tr>
+              <td><!--HEDDY YU TABAO-->
+                <div class="cursor-pointer hover:bg-color-primary-dark ease-in duration-200" style="margin-top:100px">
+                  <div class="bg-color-primary-dark inline-block rounded-full py-5 px-6">
+                    <i class="fa-solid fa-calendar-days text-4xl"></i>
                   </div>
-                  <img src="./resources/header/Atty Boyet Ernest Tabao.png" class="h-25 mr-3" alt="Flowbite Logo"/>
-                  <h3 class="text-xl font-bold py-4">Atty Ernest Tabao</h3>
-                 
-              </div>
-              <!-- card no 3 -->
-              <div class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
-                  <div class="bg-color-primary-dark inline-block rounded-2xl py-5 px-6">
-                      <i class="fa-solid fa-phone text-4xl"></i>
+                  <div class="relative inline-block">
+                    <img src="../resources/photos/board_of_trustees/heddy_tabao.JPG" class="rounded-2xl h-25 w-25 object-cover object-center" alt="Flowbite Logo"/>
+                    <h3 class="absolute flex justify-center text-4xl font-bold" style="color:white; left:50px; right:50px; bottom:100px; text-shadow: 2px 2px 4px black">Heddy Yu Tabao</h3>
                   </div>
-                  <img src="./resources/header/Engineer Bryan.png" class="h-25 mr-3" alt="Flowbite Logo"/>
-                  <h3 class="text-xl font-bold py-4">Engr.Bryan Tanagras</h3>
-              </div>
-
-
-              <div class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
-                <div class="bg-color-primary-dark inline-block rounded-2xl py-5 px-6">
-                    <i class="fa-solid fa-phone text-4xl"></i>
                 </div>
-                <img src="./resources/header/Kristelle.png" class="h-25 mr-3" alt="Flowbite Logo"/>
-                <h3 class="text-xl font-bold py-4">Kristelle Tabao</h3>           
-            </div>
+              </td>
+            </tr>
 
+            <tr>
+              <td><!--ENGR BRY-->
+                <div class="cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                  <div class="bg-color-primary-dark inline-block rounded-full py-5 px-6">
+                    <i class="fa-solid fa-calendar-days text-4xl"></i>
+                  </div>
+                  <div class="relative inline-block">
+                    <img src="../resources/photos/board_of_trustees/engr_bry.png" class="rounded-2xl h-25 w-25 object-cover object-center" alt="Flowbite Logo"/>
+                    <h3 class="absolute flex justify-center text-4xl font-bold" style="color:white; left:50px; right:50px; bottom:100px; text-shadow: 2px 2px 4px black">Engr. Bryan Tañagras</h3>
+                  </div>
+                </div>
+              </td>
+            </tr>
 
-            <div class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
-              <div class="bg-color-primary-dark inline-block rounded-2xl py-5 px-6">
-                  <i class="fa-solid fa-phone text-4xl"></i>
-              </div>
-              <img src="./resources/header/Katrina Yu Tabao.png" class="h-25 mr-3" alt="Flowbite Logo"/>
-              <h3 class="text-xl font-bold py-4">Katrina Yu Tabao</h3>
-          </div>
+            <tr>
+              <td><!--KATRINA YU TABAO-->
+                <div class="cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                  <div class="bg-color-primary-dark inline-block rounded-full py-5 px-6">
+                    <i class="fa-solid fa-calendar-days text-4xl"></i>
+                  </div>
+                  <div class="relative inline-block">
+                    <img src="../resources/photos/board_of_trustees/katrina_tabao.jpg" class="rounded-2xl h-25 w-25 object-cover object-center" alt="Flowbite Logo"/>
+                    <h3 class="absolute flex justify-center text-4xl font-bold" style="color:white; left:50px; right:50px; bottom:100px; text-shadow: 2px 2px 4px black">Katrina Yu Tabao</h3>
+                  </div>
+                </div>
+              </td>
+            </tr>
 
-
-          <div class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
-            <div class="bg-color-primary-dark inline-block rounded-2xl py-5 px-6">
-                <i class="fa-solid fa-phone text-4xl"></i>
-            </div>
-            <img src="./resources/header/Kassandra.png" class="h-25 mr-3" alt="Flowbite Logo"/>
-            <h3 class="text-xl font-bold py-4">Kassandra Tabao </h3>
+            <tr>
+              <td><!--KASSANDRA TABAO-->
+                <div class="cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                  <div class="bg-color-primary-dark inline-block rounded-full py-5 px-6">
+                    <i class="fa-solid fa-calendar-days text-4xl"></i>
+                  </div>
+                  <div class="relative inline-block">
+                    <img src="../resources/photos/board_of_trustees/kassandra_tabao.png" class="rounded-2xl h-25 w-25 object-cover object-center" alt="Flowbite Logo"/>
+                    <h3 class="absolute flex justify-center text-4xl font-bold" style="color:white; left:50px; right:50px; bottom:100px; text-shadow: 2px 2px 4px black">Kassandra Tabao</h3>
+                  </div>
+                </div> 
+              </td>
+            </tr>
+          </table>
         </div>
 
+        <div class="trustees-column" style="margin-top:400px">
+          <table class="trustees-table">
+            <tr>
+              <td><!--ERNEST TABAO-->
+                <div class="cursor-pointer hover:bg-color-primary-dark ease-in duration-200" style="margin-top:100px">
+                  <div class="bg-color-primary-dark inline-block rounded-full py-5 px-6">
+                    <i class="fa-solid fa-calendar-days text-4xl"></i>
+                  </div>
+                  <div class="relative inline-block">
+                    <img src="../resources/photos/board_of_trustees/ernest_tabao.jpg" class="rounded-2xl h-25 w-25 object-cover object-center" alt="Flowbite Logo"/>
+                    <h3 class="absolute flex justify-center text-4xl font-bold" style="color:white; left:50px; right:50px; bottom:100px; text-shadow: 2px 2px 4px black">Ernest Tabao</h3>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            
+            <tr>
+              <td><!--KRISTELLE TABAO-->
+                <div class="cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                  <div class="bg-color-primary-dark inline-block rounded-full py-5 px-6">
+                    <i class="fa-solid fa-calendar-days text-4xl"></i>
+                  </div>
+                  <div class="relative inline-block">
+                    <img src="../resources/photos/board_of_trustees/kristelle_tabao.png" class="rounded-2xl h-25 w-25 object-cover object-center" alt="Flowbite Logo"/>
+                    <h3 class="absolute flex justify-center text-4xl font-bold" style="color:white; left:50px; right:50px; bottom:100px; text-shadow: 2px 2px 4px black">Kristelle Tabao</h3>
+                  </div>
+                </div>
+              </td>
+            </tr>
 
-        <div class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
-          <div class="bg-color-primary-dark inline-block rounded-2xl py-5 px-6">
-              <i class="fa-solid fa-phone text-4xl"></i>
-          </div>
-          <img src="./resources/header/Ms Thea Tabao.png" class="h-25 mr-3" alt="Flowbite Logo"/>
-          <h3 class="text-xl font-bold py-4">Ms Thea Nicole Tabao </h3>
+            <tr>
+              <td><!--THEA NICOLE TABAO-->
+                <div class="cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                  <div class="bg-color-primary-dark inline-block rounded-full py-5 px-6">
+                    <i class="fa-solid fa-calendar-days text-4xl"></i>
+                  </div>
+                  <div class="relative inline-block">
+                    <img src="../resources/photos/board_of_trustees/thea_tabao.png" class="rounded-2xl h-25 w-25 object-cover object-center" alt="Flowbite Logo"/>
+                    <h3 class="absolute flex justify-center text-4xl font-bold" style="color:white; left:50px; right:50px; bottom:100px; text-shadow: 2px 2px 4px black">Thea Nicole Tabao</h3>
+                  </div>
+                </div> 
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
-    
- 
-      <ul class="hidden lg:flex items-center space-x-6">
-        <div class="container mx-auto py-5 flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <img class="w-8" src="./img/logo.png" alt="" />
-            <span class="text-2xl font-bold text-white">Portwind.</span>
-          </div>
-          <span class="hidden md:block font-medium text-white"
-         
-          <div class="flex gap-2">
-            <img class="w-4 cursor-pointer" src="./img/facebook.png" alt="" />
-            <img class="w-4 cursor-pointer" src="./img/instagram.png" alt="" />
-            <img class="w-4 cursor-pointer" src="./img/twitter.png" alt="" />
-            <img class="w-4 cursor-pointer" src="./img/linkedin.png" alt="" />
-          </div>
-        </div>
 
+    </div>
+  </section>
+		
+      </main>
+    </body>
+    </html>
