@@ -1,13 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-<<<<<<< HEAD
-=======
-
 body {
   font-family: "Poppins", sans-serif;
 }
 
->>>>>>> eae3babb536b5b9f935d62a99e9693c90656f34e
 .section-hero {
   min-height: 100vh;
   position: relative;
@@ -67,7 +63,6 @@ main .hero {
   width: 50%;
   font-size: 0.8rem;
   margin: 0 auto;
-<<<<<<< HEAD
 }
 
 /*Start Vision, Mission */
@@ -161,6 +156,307 @@ main .hero {
 } */
 
 /*End Vision, Mission */
-=======
+
+.our-values {
+  margin: 4rem 0;
 }
->>>>>>> eae3babb536b5b9f935d62a99e9693c90656f34e
+/* START OF OUR VALUES */
+/* END OF OUR VALUES */
+
+.card-hovers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-top: 1rem;
+}
+.card-hover {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 32px -10px rgba(0, 0, 0, 0.08);
+}
+
+.card-hover:nth-child(1):before,
+.card-hover:nth-child(6):before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(255, 114, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 114, 0, 0.1727826286764706) 0%,
+    rgba(255, 114, 0, 0.813678987219888) 100%
+  );
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.card-hover:nth-child(2):before,
+.card-hover:nth-child(4):before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(32, 172, 203);
+  background: linear-gradient(
+    180deg,
+    rgba(32, 172, 203, 0.6147994353991597) 0%,
+    rgba(32, 172, 203, 0.9117182029061625) 100%
+  );
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.card-hover:nth-child(3):before,
+.card-hover:nth-child(5):before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(227, 193, 45);
+  background: linear-gradient(
+    180deg,
+    rgba(227, 193, 45, 0.48314677433473385) 0%,
+    rgba(227, 193, 45, 1) 100%
+  );
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.card-hover:hover::before {
+  z-index: -1;
+  transition: all 0.35s cubic-bezier(0.1, 0.72, 0.4, 0.97);
+}
+
+.card-hover:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    190deg,
+    rgba(2, 0, 36, 0.5) 0%,
+    rgba(9, 9, 121, 0.5) 35%,
+    rgba(0, 212, 255, 0.5) 100%
+  );
+}
+
+.card-hover:hover .card-hover__content {
+  bottom: 100%;
+  transform: translateY(190%);
+
+  transition: all 0.35s;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.card-hover:hover img {
+  transform: scale(1);
+  transition: 0.35s 0.1s transform cubic-bezier(0.1, 0.72, 0.4, 0.97);
+}
+.card-hover__content {
+  width: 100%;
+  text-align: center;
+  padding: 0 50px 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(0);
+  transition: all 0.35s;
+  z-index: 5;
+}
+
+.card-hover__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1em;
+  color: #fff;
+  line-height: 2.5rem;
+}
+.card-hover__title span {
+  color: #2d7f0b;
+}
+.card-hover__text {
+  font-size: 0.75rem;
+}
+
+.card-hover__link:hover svg {
+  transform: translateX(4px);
+}
+.card-hover__link svg {
+  width: 18px;
+  margin-left: 4px;
+  transition: transform 0.3s;
+}
+
+.card-hover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  z-index: -1;
+  transform: scale(1.2);
+  transition: 0.35s 0.35s transform cubic-bezier(0.1, 0.72, 0.4, 0.97);
+}
+
+/* why-who */
+
+.card-parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80%;
+  column-gap: 3rem;
+  margin: 0 auto;
+}
+.card-parent .card-child {
+  border: rgba(227, 193, 45, 1) 5px solid;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.card-child {
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 5px 25px -4px rgba(32, 172, 203, 0.5147994353991597);
+  -moz-box-shadow: 2px 5px 25px -4px rgba(32, 172, 203, 0.5147994353991597);
+  box-shadow: 2px 5px 25px -4px rgba(32, 172, 203, 0.5147994353991597);
+}
+
+.card-child h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card-child i {
+  width: 100%;
+  text-align: center;
+  font-size: 8rem;
+  margin: 2rem 0;
+  color: rgb(255, 114, 0);
+}
+
+.card-child p {
+  font-size: 12px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+#card-child-elipses {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotateY(180deg);
+  z-index: -1;
+}
+
+#card-child-elipses-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  z-index: -1;
+}
+
+.why-should-parent {
+  margin: 4rem 0;
+  display: flex;
+  gap: 4rem;
+}
+
+.why-should-image {
+  width: 600px;
+}
+.why-should-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.why-should-parent h1 {
+  margin-bottom: 3rem;
+}
+
+.why-should-text .highlight {
+  color: rgb(255, 114, 0);
+}
+
+.marquee {
+  display: flex;
+  padding: 0.7rem 0;
+  justify-content: flex-start;
+  background-color: rgba(227, 193, 45, 1);
+}
+
+.marquee h1 {
+  font-size: 2rem;
+  white-space: nowrap;
+  animation: move-rtl 15s linear infinite;
+}
+
+.marquee h1::before {
+  content: "";
+  height: 25px;
+  width: 25px;
+  background-color: rgb(255, 114, 0);
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 3rem;
+}
+
+@keyframes move-rtl {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.slick-slide {
+  margin: 10px;
+}
+
+.index-slider-card {
+  width: 400px !important;
+  height: 300px !important;
+  background-color: red;
+}
+
+.index-slider-card .image {
+  width: 100%;
+  height: 100%;
+}
+
+.index-slider-card .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.index-slider-view-more {
+  width: 300px !important;
+  height: 300px !important;
+  box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.1);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.index-slider-view-more:hover {
+  background-color: rgb(32, 172, 203);
+  color: white;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(255, 0, 0) !important;
+}
