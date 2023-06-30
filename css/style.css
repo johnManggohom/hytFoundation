@@ -73,6 +73,7 @@ header {
     color: #e3c12d;
   }
 }
+
 /* END OF GENERAL STYLING */
 
 /* FOOTER SOCIAL MEDIA ICONS */
@@ -93,13 +94,18 @@ header {
 }
 
 /* BACKGROUND CIRCLES */
+
+.bg-circles, .blue svg, .yellow svg, .red svg, 
+.vector-red svg, .vector-blue svg, .vector-yellow svg {
+=======
 .bg-circles,
 .blue svg,
 .yellow svg,
 .red svg {
+
   position: absolute;
   margin-top: -70px;
-  z-index: -1;
+  z-index: -2;
 }
 
 .blue {
@@ -109,12 +115,40 @@ header {
 
 .yellow {
   float: left;
-  margin: 0 30px 0 200px;
+  margin: 0 0 0 220px;
 }
 
 .red {
   float: right;
-  margin: 0 0 0 684.5px;
+  margin: 0 0 0 694.5px;
+}
+
+  .red-trustees1 {
+    float: left;
+    margin: 0 0 0 -720px;
+  }
+  .red-trustees2 {
+    float: left;
+    margin: -350px 0 0 -90px;
+  }
+  .red-trustees3 {
+    float: right;
+    margin: -300px 0 0 0;
+  }
+
+.vector-red {
+  float: left;
+  margin: -700px 0 0 0;
+}
+
+.vector-blue {
+  float: left;
+  margin: 200px 0 0 0;
+}
+
+.vector-yellow {
+  float: left;
+  margin: 1700px 0 0 0;
 }
 
 /* DREAM ACADEMY TEXT STYLING */
@@ -160,10 +194,6 @@ header {
   border-radius: 19px;
 }
 
-.unit-img img {
-  border: 1px solid red; /*delete this after... only meant to show the size of the image*/
-}
-
 /* JOIN US STYLING */
 .join-table {
   width: 100px;
@@ -174,21 +204,19 @@ header {
   padding-bottom: 10px;
 }
 
+
+.join-img, .join-img img {
+  width: 618px;
+  height: 312px;
+=======
 .join-img,
 .join-img img {
   width: 620px;
   height: 350px;
+
   vertical-align: middle;
   text-align: center;
   border-radius: 19px;
-}
-
-.join_map img {
-  text-align: center;
-  height: 360px;
-  width: auto;
-  border: 1px solid red;
-  border-radius: 27px;
 }
 
 /* JOIN US > Contact Details STYLING*/
@@ -215,5 +243,108 @@ header {
   padding-left: 20px;
   vertical-align: top;
   margin-top: 20px;
+
+  color: #FFFFFF;
+}
+
+.email-icon {
+  margin-left: 13px;
+  margin-top: -50px;
+}
+
+.add-icon {
+  margin-left: 13px;
+  margin-top: -50px;
+}
+
+/* BORAD OF TRUSTEES CARDS STYLING */
+.trustees-table {
+  width: 100%;
+}
+
+.trustees-table td {
+  padding: 27px 0 27px 0;
+}
+
+.trustees-table td img {
+  height: 811px;
+  width: 540px;
+}
+
+.trustees-row {
+  margin-left: 5px;
+  margin-right: -5px;
+  margin-top: -90px;
+}
+  
+.trustees-column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.trustees-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.card-filter {
+  position: absolute;
+  margin-top: -775px;
+}
+
+/* BOARD OF TRUSTEES PROFILE STYLING */
+.trustee-pic {
+  width: 578px;
+  height: auto;
+  margin-top: 40px;
+}
+
+.trustee-pic img {
+  border-radius: 19px;
+}
+
+.trustee-info p {
+  width: 1100px;
+  text-align: justify;
+}
+
+/* KNOW MORE STYLING */
+.know-more-table {
+  width: 1100px;
+  text-align: center;
+}
+
+.know-more-table, .know-more-table td {
+  text-align: center;
+}
+
+.know-more-table img {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -80px;
+  z-index: 10;
+  border-radius: 100px;
+  border: 10px solid black;
+}
+
+.bg-rectangle-know-more {
+  width: 100%;
+  height: 100px;
+  z-index: -1;
+}
+
+.decor-know-more {
+  width: 100%;
+  height: 7px;
+  z-index: -1;
+  background-color: #dddddd;
+}
+=======
   color: #ffffff;
 }
+
