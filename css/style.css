@@ -95,10 +95,10 @@ header {
 
 /* BACKGROUND CIRCLES */
 .bg-circles, .blue svg, .yellow svg, .red svg, 
-.vector-red svg {
+.vector-red svg, .vector-blue svg, .vector-yellow svg {
   position: absolute;
   margin-top: -70px;
-  z-index: -1;
+  z-index: -2;
 }
 
 .blue {
@@ -132,6 +132,16 @@ header {
 .vector-red {
   float: left;
   margin: -700px 0 0 0;
+}
+
+.vector-blue {
+  float: left;
+  margin: 200px 0 0 0;
+}
+
+.vector-yellow {
+  float: left;
+  margin: 1700px 0 0 0;
 }
 
 /* DREAM ACADEMY TEXT STYLING */
