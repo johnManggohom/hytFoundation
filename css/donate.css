@@ -1,0 +1,88 @@
+body {
+	font-family: "Poppins", sans-serif;
+	margin: 0 auto;
+	
+}
+/*bg image*/
+body::before {
+	border: px solid;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('../resources/images/DonateBg.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto;
+	background-size: 100% 100%;
+	z-index: -1;
+	margin-top: ;
+}
+
+header {
+  height: 17vh;
+}
+
+.container-local {
+	width: 80%;
+	margin: 0 auto;
+	/*border: 1px solid;*/
+}
+
+/*image slideshow*/
+.slideshow-container {
+	border-radius: 10px;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 390px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slideshow-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.slideshow-dots button {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.slideshow-dots button.active {
+  background-color: rgba(0, 0, 0, 0.8);
+}
