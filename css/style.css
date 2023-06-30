@@ -274,6 +274,11 @@ header {
   display: table;
 }
 
+.card-filter {
+  position: absolute;
+  margin-top: -775px;
+}
+
 /* BOARD OF TRUSTEES PROFILE STYLING */
 .trustee-pic {
   width: 578px;
