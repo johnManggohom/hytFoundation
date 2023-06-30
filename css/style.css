@@ -94,7 +94,7 @@ header {
 }
 
 /* BACKGROUND CIRCLES */
-.bg-circles, .blue svg, .yellow svg, .red svg, 
+.bg-circles, .blue svg, .yellow svg, .yellow2 svg, .red svg, 
 .vector-red svg, .vector-blue svg, .vector-yellow svg {
   position: absolute;
   margin-top: -70px;
@@ -110,6 +110,11 @@ header {
   float: left;
   margin: 0 0 0 220px;
 }
+
+  .yellow2 {
+    float: left;
+    margin: 70px 0 0 220px;
+  }
 
 .red {
   float: right;
@@ -247,23 +252,23 @@ header {
 }
 
 .trustees-table td {
-  padding: 27px 0 27px 0;
+  padding: 40px 0 40px 0;
 }
 
 .trustees-table td img {
-  height: 811px;
-  width: 540px;
+  height: 600px;
+  width: 400px;
 }
 
 .trustees-row {
-  margin-left: 5px;
-  margin-right: -5px;
+  margin-left: 120px;
+  margin-right: -120px;
   margin-top: -90px;
 }
   
 .trustees-column {
   float: left;
-  width: 50%;
+  width: 40%;
   padding: 5px;
 }
 
@@ -274,9 +279,11 @@ header {
   display: table;
 }
 
-.card-filter {
+.card-filter svg {
   position: absolute;
-  margin-top: -775px;
+  margin-top: -587px;
+  height: 600px;
+  width: 400px;
 }
 
 /* BOARD OF TRUSTEES PROFILE STYLING */
