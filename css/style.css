@@ -94,17 +94,16 @@ header {
 }
 
 /* BACKGROUND CIRCLES */
-
-.bg-circles, .blue svg, .yellow svg, .red svg, 
-.vector-red svg, .vector-blue svg, .vector-yellow svg {
-=======
-.bg-circles,
-.blue svg,
+.bg-circles, 
+.blue svg, 
 .yellow svg,
-.red svg {
-
+.yellow2 svg, 
+.red svg, 
+.vector-red svg, 
+.vector-blue svg, 
+.vector-yellow svg {
   position: absolute;
-  margin-top: -70px;
+  margin-top: -80px;
   z-index: -2;
 }
 
@@ -115,12 +114,16 @@ header {
 
 .yellow {
   float: left;
-  margin: 0 0 0 220px;
+  margin: 0 0 0 250px;
 }
+  .yellow2 {
+    float: left;
+    margin: 4% 0 0 13%;
+  }
 
 .red {
   float: right;
-  margin: 0 0 0 694.5px;
+  margin: 0 0 0 830px;
 }
 
   .red-trustees1 {
@@ -152,13 +155,9 @@ header {
 }
 
 /* DREAM ACADEMY TEXT STYLING */
-.dreamacademy {
-  width: 1500px;
-}
-
 .dream-desc {
-  width: 800px;
-  text-align: center;
+  width: 75%;
+  margin-top: -1%;
 }
 
 /* TRAINING PROGRAM AND OBJECTIVES STYLING */
@@ -181,34 +180,21 @@ header {
 }
 
 /* UNITS STYLING */
-.units {
-  width: 1420px;
-}
-
 .unit-img,
 .unit-img img {
-  width: 600px;
-  height: 330px;
+  width: 550px;
+  height: 300px;
   vertical-align: middle;
   text-align: center;
-  border-radius: 19px;
+  border-radius: 20px;
 }
 
 /* JOIN US STYLING */
-.join-table {
-  width: 100px;
-  padding: 0 20px 0 20px;
-}
-
-.join-table td {
-  padding-bottom: 10px;
-}
-
-
-.join-img, .join-img img {
+/*.join-img, .join-img img {
   width: 618px;
   height: 312px;
-=======
+  
+/*=======*/
 .join-img,
 .join-img img {
   width: 620px;
@@ -262,25 +248,21 @@ header {
   width: 100%;
 }
 
-.trustees-table td {
-  padding: 27px 0 27px 0;
-}
-
 .trustees-table td img {
-  height: 811px;
-  width: 540px;
+  height: 600px;
+  width: 400px;
 }
 
 .trustees-row {
-  margin-left: 5px;
-  margin-right: -5px;
-  margin-top: -90px;
+  margin-left: 7%;
+  margin-right: -7%;
+  margin-top:-10%;
 }
   
 .trustees-column {
   float: left;
-  width: 50%;
-  padding: 5px;
+  width: 30%;
+  padding: 1%;
 }
 
 /* Clearfix (clear floats) */
@@ -290,20 +272,23 @@ header {
   display: table;
 }
 
-.card-filter {
+.card-filter svg {
   position: absolute;
-  margin-top: -775px;
+  margin-top: -587px;
+  height: 600px;
+  width: 400px;
+  z-index: 1;
 }
 
 /* BOARD OF TRUSTEES PROFILE STYLING */
 .trustee-pic {
-  width: 578px;
+  width: 300px;
   height: auto;
-  margin-top: 40px;
+  margin-top: 3%;
 }
 
 .trustee-pic img {
-  border-radius: 19px;
+  border-radius: 20px;
 }
 
 .trustee-info p {
@@ -344,7 +329,8 @@ header {
   z-index: -1;
   background-color: #dddddd;
 }
-=======
-  color: #ffffff;
-}
+/*=======*/
+/*  {*/
+/*  color: #ffffff;*/
+/*}*/
 
