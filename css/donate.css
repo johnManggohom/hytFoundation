@@ -1,0 +1,67 @@
+body {
+	font-family: "Poppins", sans-serif;
+	margin: 0 auto;
+	
+}
+/*bg image*/
+body::before {
+	border: px solid;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('../resources/images/DonateBg.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto;
+	background-size: 100% 100%;
+	z-index: -1;
+	margin-top: ;
+}
+
+header {
+  height: 17vh;
+}
+
+.container-local {
+	width: 80%;
+	margin: 0 auto;
+	/*border: 1px solid;*/
+}
+
+/*image slideshow*/
+.slider-container {
+	width:100%;
+  border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.slider {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+	max-width: 100%;
+  height:23rem;
+}
+
+.slider-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: none;
+	border: none;
+	outline: none;
+}
+
+.slider-arrow-left {
+	left: 0rem;
+}
+
+.slider-arrow-right {
+	right: 0rem;
+}
