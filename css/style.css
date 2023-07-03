@@ -94,6 +94,7 @@ header {
 }
 
 /* BACKGROUND CIRCLES */
+
 .bg-circles, 
 .blue svg, 
 .yellow svg,
@@ -102,6 +103,19 @@ header {
 .vector-red svg, 
 .vector-blue svg, 
 .vector-yellow svg {
+
+
+.bg-circles,
+.blue svg,
+.yellow svg,
+.red svg,
+.vector-red svg,
+.vector-blue svg,
+.vector-yellow svg,
+.bg-circles,
+.blue svg,
+.yellow svg,
+.red svg {
   position: absolute;
   margin-top: -80px;
   z-index: -2;
@@ -126,18 +140,18 @@ header {
   margin: 0 0 0 830px;
 }
 
-  .red-trustees1 {
-    float: left;
-    margin: 0 0 0 -720px;
-  }
-  .red-trustees2 {
-    float: left;
-    margin: -350px 0 0 -90px;
-  }
-  .red-trustees3 {
-    float: right;
-    margin: -300px 0 0 0;
-  }
+.red-trustees1 {
+  float: left;
+  margin: 0 0 0 -720px;
+}
+.red-trustees2 {
+  float: left;
+  margin: -350px 0 0 -90px;
+}
+.red-trustees3 {
+  float: right;
+  margin: -300px 0 0 0;
+}
 
 .vector-red {
   float: left;
@@ -190,11 +204,28 @@ header {
 }
 
 /* JOIN US STYLING */
+
 /*.join-img, .join-img img {
   width: 618px;
   height: 312px;
   
 /*=======*/
+
+.join-table {
+  width: 100px;
+  padding: 0 20px 0 20px;
+}
+
+.join-table td {
+  padding-bottom: 10px;
+}
+
+.join-img,
+.join-img img {
+  width: 618px;
+  height: 312px;
+}
+
 .join-img,
 .join-img img {
   width: 620px;
@@ -230,7 +261,7 @@ header {
   vertical-align: top;
   margin-top: 20px;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .email-icon {
@@ -258,7 +289,7 @@ header {
   margin-right: -7%;
   margin-top:-10%;
 }
-  
+
 .trustees-column {
   float: left;
   width: 30%;
@@ -302,7 +333,8 @@ header {
   text-align: center;
 }
 
-.know-more-table, .know-more-table td {
+.know-more-table,
+.know-more-table td {
   text-align: center;
 }
 
@@ -329,8 +361,10 @@ header {
   z-index: -1;
   background-color: #dddddd;
 }
+
 /*=======*/
 /*  {*/
 /*  color: #ffffff;*/
 /*}*/
+
 
