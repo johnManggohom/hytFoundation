@@ -459,3 +459,11 @@ main .hero {
 .slick-next:before {
   color: rgb(255, 0, 0) !important;
 }
+
+.glimpse-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin: 1rem 0;
+  gap: 1rem;
+}
