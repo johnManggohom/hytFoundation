@@ -1,30 +1,35 @@
 /*image slideshow*/
+document.addEventListener("DOMContentLoaded", function () {
+  const sliderContainer = document.querySelector(".slider-container");
+  const slider = document.querySelector(".slider");
+  const slides = document.querySelectorAll(".slide");
+  const leftArrow = document.querySelector(".slider-arrow-left");
+  const rightArrow = document.querySelector(".slider-arrow-right");
+  let currentSlide = 0;
 
-const slides = document.querySelectorAll('.slide');
-const dots = document.querySelectorAll('.slideshow-dots button');
-let currentSlide = 0;
-let intervalId;
+  function showSlide() {
+      const slideWidth = slides[currentSlide].clientWidth;
+      slider.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
+  }
 
-function showSlide(index) {
-  slides.forEach((slide) => slide.classList.remove('active'));
-  dots.forEach((dot) => dot.classList.remove('active'));
-  slides[index].classList.add('active');
-  dots[index].classList.add('active');
-}
+  function nextSlide() {
+      currentSlide++;
+      if (currentSlide >= slides.length) {
+          currentSlide = 0;
+      }
+      showSlide();
+  }
 
-function jumpToSlide(index) {
-  currentSlide = index;
-  showSlide(currentSlide);
-  clearInterval(intervalId);
-  intervalId = setInterval(scrollRight, 3000); // Auto-slide after 3 seconds
-}
+  function prevSlide() {
+      currentSlide--;
+      if (currentSlide < 0) {
+          currentSlide = slides.length - 1;
+      }
+      showSlide();
+  }
 
-function scrollRight() {
-  currentSlide = (currentSlide + 1) % slides.length;
-  showSlide(currentSlide);
-  clearInterval(intervalId);
-  intervalId = setInterval(scrollRight, 3000); // Auto-slide after 3 seconds
-}
+  rightArrow.addEventListener("click", nextSlide);
+  leftArrow.addEventListener("click", prevSlide);
 
-// Start auto-slide on page load
-intervalId = setInterval(scrollRight, 3000); // Auto-slide after 3 seconds
+  setInterval(nextSlide, 3000); // Change slide every 3 seconds
+});
