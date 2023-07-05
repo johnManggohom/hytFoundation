@@ -1,35 +1,35 @@
 /*image slideshow*/
-document.addEventListener("DOMContentLoaded", function () {
-  const sliderContainer = document.querySelector(".slider-container");
-  const slider = document.querySelector(".slider");
-  const slides = document.querySelectorAll(".slide");
-  const leftArrow = document.querySelector(".slider-arrow-left");
-  const rightArrow = document.querySelector(".slider-arrow-right");
-  let currentSlide = 0;
+const carouselItems = document.querySelectorAll('.carousel-item');
+let currentSlide = 0;
+let slideInterval;
 
-  function showSlide() {
-      const slideWidth = slides[currentSlide].clientWidth;
-      slider.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
-  }
+function showSlide(index) {
+  carouselItems.forEach((item) => {
+    item.classList.remove('active');
+  });
+  carouselItems[index].classList.add('active');
+}
 
-  function nextSlide() {
-      currentSlide++;
-      if (currentSlide >= slides.length) {
-          currentSlide = 0;
-      }
-      showSlide();
-  }
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % carouselItems.length;
+  showSlide(currentSlide);
+}
 
-  function prevSlide() {
-      currentSlide--;
-      if (currentSlide < 0) {
-          currentSlide = slides.length - 1;
-      }
-      showSlide();
-  }
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + carouselItems.length) % carouselItems.length;
+  showSlide(currentSlide);
+}
 
-  rightArrow.addEventListener("click", nextSlide);
-  leftArrow.addEventListener("click", prevSlide);
+function startSlideInterval() {
+  slideInterval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
+}
 
-  setInterval(nextSlide, 3000); // Change slide every 3 seconds
-});
+function stopSlideInterval() {
+  clearInterval(slideInterval);
+}
+
+startSlideInterval();
+
+const carousel = document.querySelector('.carousel');
+carousel.addEventListener('mouseenter', stopSlideInterval);
+carousel.addEventListener('mouseleave', startSlideInterval);
