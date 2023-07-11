@@ -46,7 +46,7 @@ header {
   left: 0;
   width: 100vw;
   z-index: 999;
-  height: 14vh;
+  height: 15vh;
   /* background-color: #ffffff; */
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.82);
@@ -122,7 +122,6 @@ header img {
 
 /* BACKGROUND CIRCLES */
 
-
 .bg-circles,
 .blue svg,
 .yellow svg,
@@ -142,7 +141,7 @@ header img {
 
 .blue {
   float: left;
-  margin: 0 0 0 0;/*top right bottom left*/
+  margin: 0 0 0 0; /*top right bottom left*/
 }
 
 .yellow {
@@ -161,7 +160,6 @@ header img {
 .red {
   float: left;
   margin: 0 0 0 67.5%;
-
 }
 
 .red-trustees1 {
@@ -198,13 +196,11 @@ header img {
 }
 
 .dream-desc {
-
   width: 800px;
   text-align: center;
 
   width: 50%;
   margin-top: -1%;
-
 }
 
 /* TRAINING PROGRAM AND OBJECTIVES STYLING */
@@ -233,7 +229,6 @@ header img {
 
 .unit-img,
 .unit-img img {
-
   width: 600px;
   height: 330px;
 
@@ -247,14 +242,12 @@ header img {
 
 /* JOIN US STYLING */
 
-
-.join-img, .join-img img {
+.join-img,
+.join-img img {
   width: 618px;
   height: 352px;
 }
 /*=======*/
-
-
 
 .join-table {
   width: 100px;
@@ -327,7 +320,6 @@ header img {
 }
 
 .trustees-table td img {
-
   height: 811px;
   width: 540px;
 }
@@ -344,19 +336,15 @@ header img {
 .trustees-row {
   margin-left: 14%;
   margin-right: -14%;
-  margin-top:-10%;
-
+  margin-top: -10%;
 }
 
 .trustees-column {
-  
-
   width: 50%;
   padding: 5px;
 
   width: 25%;
   padding: 0.5%;
-
 }
 
 /* Clearfix (clear floats) */
@@ -375,12 +363,10 @@ header img {
   width: 300px;
   margin-top: -96.1%;
   z-index: 2;
-
 }
 
 /* BOARD OF TRUSTEES PROFILE STYLING */
 .trustee-pic {
-
   width: 578px;
   height: auto;
   margin-top: 40px;
@@ -388,7 +374,6 @@ header img {
   width: 295px;
   height: 397px;
   margin-top: 3%;
-
 }
 
 .trustee-pic img {
