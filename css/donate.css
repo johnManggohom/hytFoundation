@@ -12,7 +12,7 @@ body::before {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url('../resources/images/DonateBg.svg');
+	background-image: url('../resources/images/newbg.svg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: auto;
@@ -21,8 +21,8 @@ body::before {
 	margin-top: ;
 }
 
-header {
-  height: 17vh;
+.name{
+	width: 49%;
 }
 
 .container-local {
@@ -32,36 +32,50 @@ header {
 }
 
 /*image slideshow*/
-.slider-container {
-	width:100%;
-  border-radius: 5px;
-	position: relative;
-	overflow: hidden;
-}
+.carousel-item {
+	display: none;
+  }
 
-.slider {
+  .carousel-item.active {
 	display: flex;
-	transition: transform 0.5s ease-in-out;
-}
+  }
 
-.slide {
-	max-width: 100%;
-  height:23rem;
-}
+  .carousel-image {
+	width: 49%; /* Set your desired image width */
+	height: 12rem;
+	object-fit: cover;
+	margin: 0 5px 0 5px; /* Add margin to create space between images */
+  }
 
-.slider-arrow {
+  .carousel-arrow {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	background-color: none;
-	border: none;
-	outline: none;
-}
+	width: 25px;
+	height: 25px;
+	background-color: #05A081;
+	color: #ffffff;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: opacity 0.3s;
+	z-index: 1;
+  }
 
-.slider-arrow-left {
-	left: 0rem;
-}
+  .carousel-arrow:hover {
+	opacity: 0.8;
+  }
 
-.slider-arrow-right {
-	right: 0rem;
-}
+  .carousel-arrow-left {
+	left: 10px;
+  }
+
+  .carousel-arrow-right {
+	right: 10px;
+  }
+
+  .carousel {
+	position: relative;
+  }
