@@ -122,63 +122,74 @@ header img {
 
 /* BACKGROUND CIRCLES */
 
+
 .bg-circles,
 .blue svg,
 .yellow svg,
 .red svg,
+.vectors,
 .vector-red svg,
 .vector-blue svg,
-.vector-yellow svg,
-.bg-circles,
-.blue svg,
-.yellow svg,
-.red svg {
+.vector-yellow svg {
   position: absolute;
+
   margin-top: -70px;
+
+  margin-top: -6.5%;
+
   z-index: -2;
 }
 
 .blue {
   float: left;
-  margin: 0 100px 0 0;
+  margin: 0 0 0 0;/*top right bottom left*/
 }
 
 .yellow {
   float: left;
+
   margin: 0 0 0 220px;
 }
 
 .red {
   float: right;
   margin: 0 0 0 694.5px;
+
+  margin: 0 0 0 20.7%;
+}
+
+.red {
+  float: left;
+  margin: 0 0 0 67.5%;
+
 }
 
 .red-trustees1 {
   float: left;
-  margin: 0 0 0 -720px;
+  margin: -2% 0 0 0;
 }
 .red-trustees2 {
   float: left;
-  margin: -350px 0 0 -90px;
+  margin: 10% 0 0 10%;
 }
 .red-trustees3 {
   float: right;
-  margin: -300px 0 0 0;
+  margin: 20% -0.5% 0 0;
 }
 
 .vector-red {
   float: left;
-  margin: -700px 0 0 0;
+  margin: 13% 30% 0 30%;
 }
 
 .vector-blue {
   float: left;
-  margin: 200px 0 0 0;
+  margin: 50% 40% 0 -40%;
 }
 
 .vector-yellow {
   float: left;
-  margin: 1700px 0 0 0;
+  margin: 150% 35% 0 -35%;
 }
 
 /* DREAM ACADEMY TEXT STYLING */
@@ -187,14 +198,19 @@ header img {
 }
 
 .dream-desc {
+
   width: 800px;
   text-align: center;
+
+  width: 50%;
+  margin-top: -1%;
+
 }
 
 /* TRAINING PROGRAM AND OBJECTIVES STYLING */
 .training-table {
-  width: 1420px;
   font-family: "Poppins", sans-serif;
+  margin-top: 1%;
 }
 
 .training {
@@ -217,14 +233,29 @@ header img {
 
 .unit-img,
 .unit-img img {
+
   width: 600px;
   height: 330px;
+
+  width: 505px;
+  height: 306px;
+
   vertical-align: middle;
   text-align: center;
   border-radius: 19px;
 }
 
 /* JOIN US STYLING */
+
+
+.join-img, .join-img img {
+  width: 618px;
+  height: 352px;
+}
+/*=======*/
+
+
+
 .join-table {
   width: 100px;
   padding: 0 20px 0 20px;
@@ -251,21 +282,20 @@ header img {
 
 /* JOIN US > Contact Details STYLING*/
 .contact-table {
-  width: 1175px;
+  width: 72%;
 }
 
 .contact-table td {
   background-color: #20accb;
-  height: 260px;
-  width: 380px;
+  height: 198px;
+  width: 345px;
   text-align: center;
   vertical-align: text-top;
 }
 
 .contact-details {
   text-align: right;
-  margin: 70px 27px 0 0;
-  color: #ffffff;
+  margin-right: 5%;
 }
 
 .image-icon {
@@ -297,6 +327,7 @@ header img {
 }
 
 .trustees-table td img {
+
   height: 811px;
   width: 540px;
 }
@@ -305,12 +336,27 @@ header img {
   margin-left: 5px;
   margin-right: -5px;
   margin-top: -90px;
+
+  height: 350px;
+  width: 300px;
+}
+
+.trustees-row {
+  margin-left: 14%;
+  margin-right: -14%;
+  margin-top:-10%;
+
 }
 
 .trustees-column {
-  float: left;
+  
+
   width: 50%;
   padding: 5px;
+
+  width: 25%;
+  padding: 0.5%;
+
 }
 
 /* Clearfix (clear floats) */
@@ -322,14 +368,27 @@ header img {
 
 .card-filter {
   position: absolute;
+
   margin-top: -775px;
+
+  height: 350px;
+  width: 300px;
+  margin-top: -96.1%;
+  z-index: 2;
+
 }
 
 /* BOARD OF TRUSTEES PROFILE STYLING */
 .trustee-pic {
+
   width: 578px;
   height: auto;
   margin-top: 40px;
+
+  width: 295px;
+  height: 397px;
+  margin-top: 3%;
+
 }
 
 .trustee-pic img {
