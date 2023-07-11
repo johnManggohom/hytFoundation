@@ -3,6 +3,7 @@ body {
   margin: 0 auto;
 }
 
+
 body,
 main {
   font-family: "Poppins", sans-serif;
@@ -24,10 +25,37 @@ body::before {
   background-size: 100% 100%;
   z-index: -1;
   margin-top: ;
+
+body::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('../resources/images/newbg.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto;
+	background-size: 100% 100%;
+	z-index: -1;
+
 }
 
-header {
-  height: 17vh;
+.ByNum::before {
+	margin: 0 auto;
+	content: "";
+	position: absolute;
+	top: 50;
+	left: 0;
+	width: 100%;
+	height: 850px;
+	background-image: url('../resources/images/OurthustBG2.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto;
+	background-size: 190% 190%;
+	z-index: -1;
 }
 
 .container-local {
@@ -45,9 +73,12 @@ header {
   line-height: 1;
 }
 
-.box {
-  background-color: #fabaaa;
-  transition: transform 0.3s;
+
+
+.box{
+	background-color: #FABAAA;
+	transition: transform 0.3s ease-in-out;
+
 }
 
 .round {
@@ -70,12 +101,19 @@ header {
 }
 
 .title2 {
+
   margin: 5% 0 5% 0;
   /*margin-top: 120px;
 	margin-bottom: 120px;*/
   font-size: 4rem;
   font-weight: 900;
   line-height: 1;
+
+	margin: 5% 0 3% 0;
+	font-size: 4rem;
+	font-weight: 900;
+	line-height: 1;
+
 }
 
 .inum {
@@ -85,9 +123,14 @@ header {
 }
 
 .datanumbers {
+
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
+
+	display: flex;
+	flex-wrap: wrap;
+
 }
 
 .item {
@@ -95,9 +138,15 @@ header {
   flex-basis: 33.333333%;
 }
 
+
 .numtitle {
   font-size: 2rem;
   font-weight: 900;
+
+.numtitle{
+	font-size: 3rem;
+	font-weight:900;
+
 }
 
 @media (max-width: 768px) {
