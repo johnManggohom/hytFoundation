@@ -1,13 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-<<<<<<< HEAD
-=======
-
 body {
   font-family: "Poppins", sans-serif;
 }
 
->>>>>>> eae3babb536b5b9f935d62a99e9693c90656f34e
 .section-hero {
   min-height: 100vh;
   position: relative;
@@ -67,7 +63,6 @@ main .hero {
   width: 50%;
   font-size: 0.8rem;
   margin: 0 auto;
-<<<<<<< HEAD
 }
 
 /*Start Vision, Mission */
@@ -161,6 +156,3 @@ main .hero {
 } */
 
 /*End Vision, Mission */
-=======
-}
->>>>>>> eae3babb536b5b9f935d62a99e9693c90656f34e
