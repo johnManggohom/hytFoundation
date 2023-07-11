@@ -45,7 +45,7 @@ main .hero {
 }
 
 .hero-text {
-  margin-top: 9rem;
+  margin-top: 15rem;
 }
 .title-2 {
   font-size: 2rem;
@@ -366,7 +366,7 @@ main .hero {
 }
 
 .why-should-parent {
-  margin: 4rem 0;
+  margin: 5rem 0;
   display: flex;
   gap: 4rem;
 }
@@ -467,3 +467,40 @@ main .hero {
   margin: 1rem 0;
   gap: 1rem;
 }
+
+/* CONTACT */
+
+.contact-us {
+  margin: 5rem 0;
+  border-top: #2d7f0b 2px solid;
+  border-bottom: #2d7f0b 2px solid;
+}
+
+.contact-parent {
+  width: 80%;
+
+  margin: auto;
+}
+.contact-text .big {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: end;
+}
+
+.right-border {
+  border-right: #2d7f0b 2px solid;
+}
+.contact-text .contact-text-half {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 2rem;
+  text-align: justify;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.contact-text .contact-text-half p {
+  width: 80%;
+}
+/* END OF CONTACT */

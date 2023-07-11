@@ -41,13 +41,40 @@ main {
 }
 
 header {
-  height: 17vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 999;
+  height: 14vh;
+  /* background-color: #ffffff; */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.7px);
+  -webkit-backdrop-filter: blur(4.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+header a,
+header button {
+  font-size: 12px;
+  font-weight: 600;
+}
 .container-local {
   width: 80%;
   margin: 0 auto;
   max-width: 1366px;
+}
+
+header img {
+  width: 11rem;
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+  transform: translateY(-20px);
 }
 
 .explore {
@@ -94,6 +121,8 @@ header {
 }
 
 /* BACKGROUND CIRCLES */
+
+
 .bg-circles,
 .blue svg,
 .yellow svg,
@@ -103,7 +132,11 @@ header {
 .vector-blue svg,
 .vector-yellow svg {
   position: absolute;
+
+  margin-top: -70px;
+
   margin-top: -6.5%;
+
   z-index: -2;
 }
 
@@ -114,12 +147,21 @@ header {
 
 .yellow {
   float: left;
+
+  margin: 0 0 0 220px;
+}
+
+.red {
+  float: right;
+  margin: 0 0 0 694.5px;
+
   margin: 0 0 0 20.7%;
 }
 
 .red {
   float: left;
   margin: 0 0 0 67.5%;
+
 }
 
 .red-trustees1 {
@@ -151,9 +193,18 @@ header {
 }
 
 /* DREAM ACADEMY TEXT STYLING */
+.dreamacademy {
+  width: 1500px;
+}
+
 .dream-desc {
+
+  width: 800px;
+  text-align: center;
+
   width: 50%;
   margin-top: -1%;
+
 }
 
 /* TRAINING PROGRAM AND OBJECTIVES STYLING */
@@ -176,22 +227,34 @@ header {
 }
 
 /* UNITS STYLING */
+.units {
+  width: 1420px;
+}
+
 .unit-img,
 .unit-img img {
+
+  width: 600px;
+  height: 330px;
+
   width: 505px;
   height: 306px;
+
   vertical-align: middle;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 19px;
 }
 
 /* JOIN US STYLING */
+
 
 .join-img, .join-img img {
   width: 618px;
   height: 352px;
 }
 /*=======*/
+
+
 
 .join-table {
   width: 100px;
@@ -207,7 +270,6 @@ header {
   width: 618px;
   height: 312px;
 }
-
 .join-img,
 .join-img img {
   width: 620px;
@@ -260,7 +322,21 @@ header {
   width: 100%;
 }
 
+.trustees-table td {
+  padding: 27px 0 27px 0;
+}
+
 .trustees-table td img {
+
+  height: 811px;
+  width: 540px;
+}
+
+.trustees-row {
+  margin-left: 5px;
+  margin-right: -5px;
+  margin-top: -90px;
+
   height: 350px;
   width: 300px;
 }
@@ -269,12 +345,18 @@ header {
   margin-left: 14%;
   margin-right: -14%;
   margin-top:-10%;
+
 }
 
 .trustees-column {
-  float: left;
+  
+
+  width: 50%;
+  padding: 5px;
+
   width: 25%;
   padding: 0.5%;
+
 }
 
 /* Clearfix (clear floats) */
@@ -284,23 +366,33 @@ header {
   display: table;
 }
 
-.card-filter svg {
+.card-filter {
   position: absolute;
+
+  margin-top: -775px;
+
   height: 350px;
   width: 300px;
   margin-top: -96.1%;
   z-index: 2;
+
 }
 
 /* BOARD OF TRUSTEES PROFILE STYLING */
 .trustee-pic {
+
+  width: 578px;
+  height: auto;
+  margin-top: 40px;
+
   width: 295px;
   height: 397px;
   margin-top: 3%;
+
 }
 
 .trustee-pic img {
-  border-radius: 20px;
+  border-radius: 19px;
 }
 
 .trustee-info p {
@@ -342,10 +434,3 @@ header {
   z-index: -1;
   background-color: #dddddd;
 }
-
-/*=======*/
-/*  {*/
-/*  color: #ffffff;*/
-/*}*/
-
-
