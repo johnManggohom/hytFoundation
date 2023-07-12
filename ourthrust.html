@@ -9,110 +9,144 @@
     <!-- CSS FILES -->
     <link rel="stylesheet" href="./css/ourthrust.css" />
 	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
     <!-- END OF CSS FILES -->
-	
+    <style>
+      header {
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        backdrop-filter: blur(0);
+      }
+
+      header a,
+      header button {
+        color: black;
+      }
+
+      .scrolled {
+        background: rgba(255, 255, 255, 0.82);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(0.7px);
+        -webkit-backdrop-filter: blur(4.7px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transition: background 1s ease;
+      }
+
+      header.scrolled a,
+      header.scrolled .drop {
+        color: black;
+      }
+    </style>
 </head>
 <body>
 	<section class="OT">
-      <header>
-        <nav class="container-local py-2">
-          <div
-            class="items-center small-font justify-end hidden w-full gap-2 md:flex md:w-auto md:order-1"
-            id="navbar-sticky"
-          >
-            <button
-              class="green-button hover:shadow-lg bg-green-600 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded-full">
-			  <a href="join-us.html">JOIN US</a>
-            </button>
-            <button
-              class="black-button hover:shadow-lg bg-gray-700 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded-full">
-              <a href="donate.html">DONATE</a>
-            </button>
-          </div>
-          <div class="flex flex-wrap items-center justify-between mx-auto">
-            <div
-              class="items-center text-white small-font justify-between hidden w-full md:flex md:w-auto md:order-1"
-              id="navbar-sticky"
-            >
-              <ul
-                class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
-              >
-                <li>
-                  <a
-                    href="index.html"
-                    class="block py-2 pl-3 pr-4 rounded-full hover:shadow-lg text-black"
-                    >Home</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4 rounded-full hover:shadow-lg text-black"
-                    >About Us</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="dreamacademy.html"
-                    class="block py-2 pl-3 pr-4 rounded-full hover:shadow-lg text-black"
-                    >Dream Academy</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div
-              class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 pl-5"
-              id="navbar-sticky"
-            >
-              <a href="index.html" class="flex items-center">
-                <img
-                  src="./resources/images/hytlogo.png"
-                  class="h-25 mr-3"
-                  alt="Flowbite Logo"
-                />
-              </a>
-            </div>
-            <div
-              class="items-center small-font justify-between hidden w-full md:flex md:w-auto md:order-1"
-              id="navbar-sticky"
-            >
-              <ul
-                class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
-              >
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4 rounded-full hover:shadow-lg"
-                    >Culture</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="coreleaders.html"
-                    class="block py-2 pl-3 pr-4 rounded-full hover:shadow-lg"
-                    >The Team</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="ourthrust.html"
-                    class="block py-2 pl-3 pr-4 rounded-full hover:shadow-lg"
-                    >Our Thrust</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4 rounded-full hover:shadow-lg"
-                    >Contact Us</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
+		<header id="header">
+			<nav class="container-local py-2">
+			  <div
+				class="items-center justify-end hidden w-full mt-4 gap-2 md:flex md:w-auto md:order-1"
+				id="navbar-sticky">
+				<button class="green-button hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full">
+				  JOIN US
+				</button>
+				<button class="black-button hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full">
+				  DONATE
+				</button>
+			  </div>
+			  <div class="flex items-start justify-between mx-auto">
+				<div class="items-center text-gray-900 small-font justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+				  <ul class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+					<li>
+					  <a
+						href="./index.html"
+						class="block py-2 pl-3 pr-4 rounded text-sm hover:bg-gray-100 md:hover:bg-transparent"
+						>Home</a
+					  >
+					</li>
+					<li>
+					  <a
+						href="./aboutUs.html"
+						class="block py-2 pl-3 text-sm pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent"
+						>About Us</a
+					  >
+					</li>
+					<li>
+					  <a
+						href="../dist/dreamacademy.html"
+						class="block py-2 pl-3 text-sm pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent"
+						>Dream Academy</a
+					  >
+					</li>
+				  </ul>
+				</div>
+				<div
+				  class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 logo"
+				  id="navbar-sticky"
+				>
+				  <a href="./index.html" class="flex items-center">
+					<img
+					  src="./resources/images/hytlogo.png"
+					  class="mr-3"
+					  alt="Flowbite Logo"
+					/>
+				  </a>
+				</div>
+				<div
+				  class="items-center text-gray-900 small-font justify-between hidden w-full md:flex md:w-auto md:order-1"
+				  id="navbar-sticky"
+				>
+				  <ul
+					class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
+				  >
+					<li>
+					  <a
+						href="../ourthrust.html"
+						class="block py-2 pl-3 text-sm pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent"
+						>Culture</a
+					  >
+					</li>
+					<li>
+					  <button
+						data-dropdown-toggle="dropdown"
+						class="block py-2 pl-3 pr-4 text-sm rounded hover:bg-gray-100 md:hover:bg-transparent"
+					  >
+						The Team
+					  </button>
+					  <div
+						class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4"
+						id="dropdown"
+					  >
+						<ul class="py-1" aria-labelledby="dropdown">
+						  <li>
+							<a
+							  href="../dist/boardoftrustees.html"
+							  class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+							  >Board of Trustees</a
+							>
+						  </li>
+						  <li>
+							<a
+							  href="../coreleaders.html"
+							  class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+							  >Core Leaders</a
+							>
+						  </li>
+						</ul>
+					  </div>
+					</li>
+					<li>
+					  <a
+						href="../ourthrust.html"
+						class="block py-2 pl-3 text-sm rounded hover:bg-gray-100 md:hover:bg-transparent"
+					  >
+						Our Thrust
+					  </a>
+					</li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+		</header>
 		<main>
 			<div class="container-local">
 				<h3 class="title text-center">Our Thrust</h3>		
@@ -331,7 +365,25 @@
 			<img class="mx-auto" src="./resources/images/footerBG.svg">
 		</footer>
 	</section>
-	<script src="./script/ourthrust.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+	<script>
+		var header = $("#header");
+		var scrollChange = 1;
+		$(window).scroll(function () {
+		  var scroll = $(window).scrollTop();
+  
+		  if (scroll >= scrollChange) {
+			header.addClass("scrolled");
+		  } else {
+			header.removeClass("scrolled");
+		  }
+		});
+	</script>
 </body>
 </html>
 
