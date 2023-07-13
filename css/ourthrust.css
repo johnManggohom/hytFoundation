@@ -1,11 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
   margin: 0 auto;
-}
-
-body,
-main {
-  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
 
@@ -22,10 +17,8 @@ body::before {
 	background-size: auto;
 	background-size: 100% 100%;
 	z-index: -1;
-
-  
-
 }
+
 /*navbar*/
 :root {
 	--green-button-color: #05a081;
@@ -95,18 +88,10 @@ body::before {
 .container-local {
   width: 80%;
   margin: 0 auto;
-  /*border: 1px solid;*/
 }
 
 .title {
-
 	margin: 15% 0 10% 0;
-	/*margin-top: 120px;
-
-  margin: 5% 0 10% 0;
-  /*margin-top: 120px;
-
-	margin-bottom: 175px;*/
   font-size: 6rem;
   font-weight: 900;
   line-height: 1;
@@ -115,13 +100,7 @@ body::before {
 
 .box{
 	background-color: #FABAAA;
-	transition: box-shadow 0.5s ease-in-out;
-	/*transition: transform 0.3s ease-in-out;*/
-
-.box {
-  background-color: #fabaaa;
-  transition: transform 0.3s ease-in-out;
-
+	transition: box-shadow 0.3s ease-in-out;
 }
 
 .round {
@@ -132,29 +111,18 @@ body::before {
 .box:hover{
 	background-color: #F15932;
 	color: white;
-	/*transform: scale(1.05);*/
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-
-.box:hover {
-  background-color: #f15932;
-  color: white;
-  transform: scale(1.05);
-
-}
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);}
 
 .box:hover .round {
   background-color: #fabaaa;
 }
 .boxtitle {
-  /*margin-top: 90px;*/
   font-weight: bold;
   text-align: left;
 }
 
 .title2 {
   margin: 5% 0 5% 0;
-  /*margin-top: 120px;
-	margin-bottom: 120px;*/
   font-size: 4rem;
   font-weight: 900;
   line-height: 1;
