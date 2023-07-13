@@ -425,8 +425,8 @@ main .hero {
 }
 
 .index-slider-card {
-  width: 400px !important;
-  height: 300px !important;
+  width: 300px !important;
+  height: 200px !important;
   background-color: red;
 }
 
@@ -443,7 +443,7 @@ main .hero {
 
 .index-slider-view-more {
   width: 300px !important;
-  height: 300px !important;
+  height: 200px !important;
   box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.1);
   display: flex !important;
   align-items: center;
