@@ -8,6 +8,162 @@
 
     <!-- CSS FILES -->
     <link rel="stylesheet" href="./css/donate.css" />
+
+	  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- END OF CSS FILES -->
+    <style>
+      header {
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        backdrop-filter: blur(0);
+      }
+
+      header a,
+      header button {
+        color: black;
+      }
+
+      .scrolled {
+        background: rgba(255, 255, 255, 0.82);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(0.7px);
+        -webkit-backdrop-filter: blur(4.7px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transition: background 1s ease;
+      }
+
+      header.scrolled a,
+      header.scrolled .drop {
+        color: black;
+      }
+    </style>
+</head>
+<body>
+	<section class="donate">
+		<header id="header">
+			<nav class="container-local py-2">
+			  <div
+				class="items-center justify-end hidden w-full mt-4 gap-2 md:flex md:w-auto md:order-1"
+				id="navbar-sticky">
+				<button class="green-button hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full">
+				  JOIN US
+				</button>
+				<button class="black-button hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full">
+				  DONATE
+				</button>
+			  </div>
+			  <div class="flex items-start justify-between mx-auto">
+				<div class="items-center text-gray-900 small-font justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+				  <ul class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+					<li>
+					  <a
+						href="./index.html"
+						class="block py-2 pl-3 pr-4 rounded text-sm hover:bg-gray-100 md:hover:bg-transparent"
+						>Home</a
+					  >
+					</li>
+					<li>
+					  <a
+						href="./aboutUs.html"
+						class="block py-2 pl-3 text-sm pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent"
+						>About Us</a
+					  >
+					</li>
+					<li>
+					  <a
+						href="../dist/dreamacademy.html"
+						class="block py-2 pl-3 text-sm pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent"
+						>Dream Academy</a
+					  >
+					</li>
+				  </ul>
+				</div>
+				<div
+				  class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 logo"
+				  id="navbar-sticky"
+				>
+				  <a href="./index.html" class="flex items-center">
+					<img
+					  src="./resources/images/hytlogo.png"
+					  class="mr-3"
+					  alt="Flowbite Logo"
+					/>
+				  </a>
+				</div>
+				<div
+				  class="items-center text-gray-900 small-font justify-between hidden w-full md:flex md:w-auto md:order-1"
+				  id="navbar-sticky"
+				>
+				  <ul
+					class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
+				  >
+					<li>
+					  <a
+						href="../ourthrust.html"
+						class="block py-2 pl-3 text-sm pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent"
+						>Culture</a
+					  >
+					</li>
+					<li>
+					  <button
+						data-dropdown-toggle="dropdown"
+						class="block py-2 pl-3 pr-4 text-sm rounded hover:bg-gray-100 md:hover:bg-transparent"
+					  >
+						The Team
+					  </button>
+					  <div
+						class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4"
+						id="dropdown"
+					  >
+						<ul class="py-1" aria-labelledby="dropdown">
+						  <li>
+							<a
+							  href="../dist/boardoftrustees.html"
+							  class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+							  >Board of Trustees</a
+							>
+						  </li>
+						  <li>
+							<a
+							  href="../coreleaders.html"
+							  class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+							  >Core Leaders</a
+							>
+						  </li>
+						</ul>
+					  </div>
+					</li>
+					<li>
+					  <a
+						href="../ourthrust.html"
+						class="block py-2 pl-3 text-sm rounded hover:bg-gray-100 md:hover:bg-transparent"
+					  >
+						Our Thrust
+					  </a>
+					</li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+		</header>
+		<main>
+			<div class="container-local">
+				<div class="flex flex-wrap mt-40">
+					<div class="w-full sm:w-2/2 md:w-2/2 lg:w-1/2 xl:w-1/2 p-2">
+            <p class="w-[36rem] text-[3rem] leading-none font-extrabold mb-12">
+            Giving a helping hand to those who need it
+            </p>
+            <p class="text-justify text-[1rem] font-semibold mb-24 pr-5 w-[34rem]">
+            We are proudly non-profit organization. Thousand of people like you help us stand up for a healthy internet for all
+            </p>
+            <div class="carousel mr-2">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./resources/images/image1.png" alt="Image 1" class="carousel-image">
+                  <img src="./resources/images/image1.png" alt="Image 2" class="carousel-image">
+
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css"
       rel="stylesheet"
@@ -170,6 +326,7 @@
                       class="carousel-image"
                     />
                   </div>
+
                 </div>
                 <div
                   class="carousel-arrow carousel-arrow-left text-[1.5rem]"
@@ -255,6 +412,90 @@
                 </div>
               </div>
             </div>
+
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="bg-black text-white mt-5">
+			<div class="container mx-auto py-8 px-8 flex flex-wrap justify-between bg-black">
+			  <div class="w-full sm:w-auto mb-4 sm:mb-0">
+				<img class="hytlogo max-w-full max-h-full mb-6" src="./resources/images/hytlogo.png">
+				<p class="text-xl font-regular w-96 text-justify">
+					We are the foundation for future generation leaders 
+					in which we support to enlighten and hone the youth  
+					in acquiring an adept set of business skills, 
+					professionally mentoring young adults and 
+					directing them to pursue what they aspire to become.</p>
+			  </div>
+			  <div class="w-full sm:w-auto mb-4 sm:mb-0 ">
+          <p class="text-lg font-bold text-gray-800 uppercase">Quicklinks</p>
+          <ul class="mt-4">
+            <li><a href="index.html" class="hover:opacity-50">Home</a></li>
+            <li><a href="#" class="hover:opacity-50">About Us</a></li>
+            <li><a href="#" class="hover:opacity-50">Dream Academy</a></li>
+            <li><a href="ourthrust.html" class="hover:opacity-50">Our Thrust</a></li>
+            <li><a href="#" class="hover:opacity-50">Contact Us</a></li>
+            <div class="flex mt-8 my-auto">
+              <p class="text-lg font-bold text-gray-800 uppercase">Social Media</p>
+              <a href="#" class="flex items-center">
+                <svg class="w-6 h-6 text-gray-800 hover:opacity-50 ml-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                  <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+              <a>
+                <svg class="w-6 h-6 text-gray-800 hover:opacity-50 ml-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                  <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+              <a>
+                <svg class="w-6 h-6 text-gray-800 hover:opacity-50 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
+                  <path fill-rule="evenodd" d="M19.7 3.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.84c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.84A4.225 4.225 0 0 0 .3 3.038a30.148 30.148 0 0 0-.2 3.206v1.5c.01 1.071.076 2.142.2 3.206.094.712.363 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.15 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965c.124-1.064.19-2.135.2-3.206V6.243a30.672 30.672 0 0 0-.202-3.206ZM8.008 9.59V3.97l5.4 2.819-5.4 2.8Z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </div>	
+          </ul>
+			  </div>
+			  <div class="w-full sm:w-auto">
+				<p class="text-lg font-bold text-gray-800 uppercase">Contact Us</p>
+					<p class="text-lg font-regular text-right mt-4">
+					Suite 1004 Atlanta Center, Annapolis St.,<br> San Juan City, Metro Manila, Philippines
+					</p>
+					<p class="text-lg font-regular text-right">(02) 835 90648<br> (63) 961 495 8696<br> (63) 905 102 4246</p>
+					<a href="mailto:hello@brains.asia" class="flex hover:opacity-50 text-lg float-right">
+						<svg class="w-6 h-6 text-gray-800 my-auto" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 2-8.4 7.05a1 1 0 0 1-1.2 0L1 2m18 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1m18 0v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2"/>
+                        </svg>
+						<span class="ml-2">hello@brains.asia</span>
+					</a>
+			  </div>
+			</div>
+			<img class="mx-auto" src="./resources/images/footerBG.svg">
+		</footer>
+	</section>
+	<script src="./script/donate.js"></script>
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+	<script>
+		var header = $("#header");
+		var scrollChange = 1;
+		$(window).scroll(function () {
+		  var scroll = $(window).scrollTop();
+  
+		  if (scroll >= scrollChange) {
+			header.addClass("scrolled");
+		  } else {
+			header.removeClass("scrolled");
+		  }
+		});
+	</script>
+</body>
+</html>
+
           </div>
         </div>
       </main>
@@ -376,3 +617,4 @@
     <script src="./script/donate.js"></script>
   </body>
 </html>
+
