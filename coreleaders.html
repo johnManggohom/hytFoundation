@@ -4,9 +4,91 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HYT Foundation</title>
+    <title>HYT Foundation | Core Leaders</title>
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="./css/ourthrust.css" />
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+	<script src="https://cdn.tailwindcss.com"></script>
+    <!-- END OF CSS FILES -->
     <style>
-      body {
+    /* NavBar style start */
+    :root {
+        --green-button-color: #05a081;
+        --black-button-color: #2d2c2c;
+        --text-white: #fdfdfd;
+    }
+
+    .green-button {
+        background-color: var(--green-button-color);
+    }
+    .black-button {
+        background-color: var(--black-button-color);
+    }
+    
+    .text-white {
+        color: var(--text-white);
+    }
+    
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 999;
+        height: 15vh;
+        /* background-color: #ffffff; */
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.82);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(0.7px);
+        -webkit-backdrop-filter: blur(4.7px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header a,
+    header button {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    
+    header img {
+        width: 11rem;
+        -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+        filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+        transform: translateY(-20px);
+    }
+
+    header {
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        backdrop-filter: blur(0);
+    }
+
+    header a,
+    header button {
+        color: black;
+    }
+
+    .scrolled {
+        background: rgba(255, 255, 255, 0.82);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(0.7px);
+        -webkit-backdrop-filter: blur(4.7px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transition: background 1s ease;
+    }
+
+    header.scrolled a,
+    header.scrolled .drop {
+        color: black;
+    }
+
+body {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
@@ -33,131 +115,156 @@
         padding: 20px;
         margin-top: auto;
       }
-    </style>
-
-    <!-- CSS FILES -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script
-      src="https://kit.fontawesome.com/b561c0f549.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- END OF CSS FILES -->
-  </head>
+/*navbar end*/
+</style>
+</head>
   <body>
     <section class="OT">
-      <!-- START OF HEADER -->
-      <header>
+      <header id="header">
         <nav class="container-local py-2">
           <div
-            class="items-center small-font justify-end hidden w-full gap-2 md:flex md:w-auto md:order-1"
+          class="items-center justify-end hidden w-full mt-4 gap-2 md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+          >
+          <button
+            class="green-button hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full"
+          >
+            JOIN US
+          </button>
+          <button
+            class="black-button hover:bg-blue-700 text-white text-xs py-1 px-3 rounded-full"
+          >
+            DONATE
+          </button>
+          </div>
+          <div class="flex items-start justify-between mx-auto">
+          <div
+            class="items-center text-gray-900 small-font justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-sticky"
           >
-            <button
-              class="green-button hover:shadow-lg bg-green-600 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded-full">
-			  <a href="join-us.html">JOIN US</a>
-            </button>
-            <button
-              class="black-button hover:shadow-lg bg-gray-700 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded-full">
-              <a href="donate.html">DONATE</a>
-            </button>
+            <ul
+            class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
+            >
+            <li>
+              <a
+              href="./index.html"
+              class="block py-2 pl-3 pr-4 rounded text-sm hover:bg-gray-100 md:hover:bg-transparent"
+              >Home</a
+              >
+            </li>
+            <li>
+              <a
+              href="./aboutUs.html"
+              class="block py-2 pl-3 text-sm pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent"
+              >About Us</a
+              >
+            </li>
+            <li>
+              <a
+              href="../dist/dreamacademy.html"
+              class="block py-2 pl-3 text-sm pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent"
+              >Dream Academy</a
+              >
+            </li>
+            </ul>
           </div>
-          <div class="flex flex-wrap items-center justify-between mx-auto">
-            <div
-              class="items-center text-white small-font justify-between hidden w-full md:flex md:w-auto md:order-1"
-              id="navbar-sticky"
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 logo"
+            id="navbar-sticky"
+          >
+            <a href="./index.html" class="flex items-center">
+            <img
+              src="./resources/images/hytlogo.png"
+              class="mr-3"
+              alt="Flowbite Logo"
+            />
+            </a>
+          </div>
+          <div
+            class="items-center text-gray-900 small-font justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+            class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
             >
-              <ul
-                class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
+            <li>
+              <a
+              href="../ourthrust.html"
+              class="block py-2 pl-3 text-sm pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent"
+              >Culture</a
               >
+            </li>
+            <li>
+              <button
+              data-dropdown-toggle="dropdown"
+              class="block py-2 pl-3 pr-4 text-sm rounded hover:bg-gray-100 md:hover:bg-transparent"
+              >
+              The Team
+              </button>
+              <div
+              class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4"
+              id="dropdown"
+              >
+              <ul class="py-1" aria-labelledby="dropdown">
                 <li>
-                  <a
-                    href="index.html"
-                    class="block py-2 pl-3 pr-4 rounded-full hover:shadow-lg text-black"
-                    >Home</a
-                  >
+                <a
+                  href="../dist/boardoftrustees.html"
+                  class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                  >Board of Trustees</a
+                >
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4 rounded-full hover:shadow-lg text-black"
-                    >About Us</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="dreamacademy.html"
-                    class="block py-2 pl-3 pr-4 rounded-full hover:shadow-lg text-black"
-                    >Dream Academy</a
-                  >
+                <a
+                  href="../coreleaders.html"
+                  class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                  >Core Leaders</a
+                >
                 </li>
               </ul>
-            </div>
-            <div
-              class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 pl-5"
-              id="navbar-sticky"
-            >
-              <a href="index.html" class="flex items-center">
-                <img
-                  src="./resources/images/hytlogo.png"
-                  class="h-25 mr-3"
-                  alt="Flowbite Logo"
-                />
+              </div>
+            </li>
+            <li>
+              <a
+              href="../ourthrust.html"
+              class="block py-2 pl-3 text-sm rounded hover:bg-gray-100 md:hover:bg-transparent"
+              >
+              Our Thrust
               </a>
-            </div>
-            <div
-              class="items-center small-font justify-between hidden w-full md:flex md:w-auto md:order-1"
-              id="navbar-sticky"
-            >
-              <ul
-                class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
-              >
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4 rounded-full hover:shadow-lg"
-                    >Culture</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="coreleaders.html"
-                    class="block py-2 pl-3 pr-4 rounded-full hover:shadow-lg"
-                    >The Team</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="ourthrust.html"
-                    class="block py-2 pl-3 pr-4 rounded-full hover:shadow-lg"
-                    >Our Thrust</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4 rounded-full hover:shadow-lg"
-                    >Contact Us</a
-                  >
-                </li>
-              </ul>
-            </div>
+            </li>
+            </ul>
+          </div>
           </div>
         </nav>
-      </section>
-    </header>
+      </header>
+    </section>
+    <script src="./script/ourthrust.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+    </script>
+	<script>
+		var header = $("#header");
+		var scrollChange = 1;
+		$(window).scroll(function () {
+		  var scroll = $(window).scrollTop();
+  
+		  if (scroll >= scrollChange) {
+			header.addClass("scrolled");
+		  } else {
+			header.removeClass("scrolled");
+		  }
+		});
+	  </script>
       
 
 <main>
-  <section class="bg-color-primary-light m-auto">
+  <section class="bg-color-primary-light m-auto mt-60">
       <div class="container py-20">
         <div class="text-center m-auto mb-20 md:w-3/4">
           <svg class="absolute z-[-1] top-0 left-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <image xlink:href="./resources/index/Ellipse 11.svg" width="100%" height="100%" preserveAspectRatio="none" x="-35"/>
-            <image xlink:href="./resources/index/Ellipse 7.svg" width="100%" height="100%" preserveAspectRatio="none" />
-            <image xlink:href="./resources/index/Ellipse 13.svg" width="100%" height="100%" preserveAspectRatio="none" x="40"/>
+            <image xlink:href="./resources/index/Group 192.png" width="100%" height="100%" preserveAspectRatio="none"/>
           </svg>
           <span class="text-6xl font-bold text-slate-1500 dark:text-black">Meet our Core Leaders</span>
           <br>
