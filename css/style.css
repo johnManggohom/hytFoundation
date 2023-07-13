@@ -14,7 +14,8 @@
   box-sizing: border-box;
 }
 
-body, main {
+body,
+main {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
@@ -24,8 +25,8 @@ body, main {
   font-weight: 300;
 }
 .title-small-font {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 3rem;
+  font-weight: 800;
 }
 
 .green-button {
@@ -40,13 +41,40 @@ body, main {
 }
 
 header {
-  height: 17vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 999;
+  height: 15vh;
+  /* background-color: #ffffff; */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.7px);
+  -webkit-backdrop-filter: blur(4.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+header a,
+header button {
+  font-size: 12px;
+  font-weight: 600;
+}
 .container-local {
   width: 80%;
   margin: 0 auto;
   max-width: 1366px;
+}
+
+header img {
+  width: 11rem;
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+  transform: translateY(-20px);
 }
 
 .explore {
@@ -72,8 +100,8 @@ header {
     color: #e3c12d;
   }
 }
-/* END OF GENERAL STYLING */
 
+/* END OF GENERAL STYLING */
 
 /* FOOTER SOCIAL MEDIA ICONS */
 .footer-social-media-icons {
@@ -93,25 +121,73 @@ header {
 }
 
 /* BACKGROUND CIRCLES */
-.bg-circles, .blue svg, .yellow svg, .red svg {
+
+.bg-circles,
+.blue svg,
+.yellow svg,
+.red svg,
+.vectors,
+.vector-red svg,
+.vector-blue svg,
+.vector-yellow svg {
   position: absolute;
+
   margin-top: -70px;
-  z-index: -1;
+
+  margin-top: -6.5%;
+
+  z-index: -2;
 }
 
 .blue {
   float: left;
-  margin: 0 100px 0 0;
+  margin: 0 0 0 0; /*top right bottom left*/
 }
 
 .yellow {
   float: left;
-  margin: 0 30px 0 200px;
+
+  margin: 0 0 0 220px;
 }
 
 .red {
   float: right;
-  margin: 0 0 0 684.5px;
+  margin: 0 0 0 694.5px;
+
+  margin: 0 0 0 20.7%;
+}
+
+.red {
+  float: left;
+  margin: 0 0 0 67.5%;
+}
+
+.red-trustees1 {
+  float: left;
+  margin: -2% 0 0 0;
+}
+.red-trustees2 {
+  float: left;
+  margin: 10% 0 0 10%;
+}
+.red-trustees3 {
+  float: right;
+  margin: 20% -0.5% 0 0;
+}
+
+.vector-red {
+  float: left;
+  margin: 13% 30% 0 30%;
+}
+
+.vector-blue {
+  float: left;
+  margin: 50% 40% 0 -40%;
+}
+
+.vector-yellow {
+  float: left;
+  margin: 150% 35% 0 -35%;
 }
 
 /* DREAM ACADEMY TEXT STYLING */
@@ -122,12 +198,15 @@ header {
 .dream-desc {
   width: 800px;
   text-align: center;
+
+  width: 50%;
+  margin-top: -1%;
 }
 
 /* TRAINING PROGRAM AND OBJECTIVES STYLING */
 .training-table {
-  width: 1420px;
   font-family: "Poppins", sans-serif;
+  margin-top: 1%;
 }
 
 .training {
@@ -148,19 +227,28 @@ header {
   width: 1420px;
 }
 
-.unit-img, .unit-img img {
+.unit-img,
+.unit-img img {
   width: 600px;
   height: 330px;
+
+  width: 505px;
+  height: 306px;
+
   vertical-align: middle;
   text-align: center;
   border-radius: 19px;
 }
 
-.unit-img img {
-  border: 1px solid red; /*delete this after... only meant to show the size of the image*/
-}
-
 /* JOIN US STYLING */
+
+.join-img,
+.join-img img {
+  width: 618px;
+  height: 352px;
+}
+/*=======*/
+
 .join-table {
   width: 100px;
   padding: 0 20px 0 20px;
@@ -170,39 +258,37 @@ header {
   padding-bottom: 10px;
 }
 
-.join-img, .join-img img {
+.join-img,
+.join-img img {
+  width: 618px;
+  height: 312px;
+}
+.join-img,
+.join-img img {
   width: 620px;
   height: 350px;
+
   vertical-align: middle;
   text-align: center;
   border-radius: 19px;
 }
 
-.join_map img {
-  text-align: center;
-  height: 360px;
-  width: auto;
-  border: 1px solid red;
-  border-radius: 27px;
-}
-
 /* JOIN US > Contact Details STYLING*/
 .contact-table {
-  width: 1175px;
+  width: 72%;
 }
 
 .contact-table td {
-  background-color: #20ACCB;
-  height: 260px;
-  width: 380px;
+  background-color: #20accb;
+  height: 198px;
+  width: 345px;
   text-align: center;
   vertical-align: text-top;
 }
 
 .contact-details {
   text-align: right;
-  margin: 70px 27px 0 0;
-  color: #FFFFFF;
+  margin-right: 5%;
 }
 
 .image-icon {
@@ -210,5 +296,126 @@ header {
   padding-left: 20px;
   vertical-align: top;
   margin-top: 20px;
-  color: #FFFFFF;
+
+  color: #ffffff;
+}
+
+.email-icon {
+  margin-left: 13px;
+  margin-top: -50px;
+}
+
+.add-icon {
+  margin-left: 13px;
+  margin-top: -50px;
+}
+
+/* BORAD OF TRUSTEES CARDS STYLING */
+.trustees-table {
+  width: 100%;
+}
+
+.trustees-table td {
+  padding: 27px 0 27px 0;
+}
+
+.trustees-table td img {
+  height: 811px;
+  width: 540px;
+}
+
+.trustees-row {
+  margin-left: 5px;
+  margin-right: -5px;
+  margin-top: -90px;
+
+  height: 350px;
+  width: 300px;
+}
+
+.trustees-row {
+  margin-left: 14%;
+  margin-right: -14%;
+  margin-top: -10%;
+}
+
+.trustees-column {
+  width: 50%;
+  padding: 5px;
+
+  width: 25%;
+  padding: 0.5%;
+}
+
+/* Clearfix (clear floats) */
+.trustees-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.card-filter {
+  position: absolute;
+
+  margin-top: -775px;
+
+  height: 350px;
+  width: 300px;
+  margin-top: -96.1%;
+  z-index: 2;
+}
+
+/* BOARD OF TRUSTEES PROFILE STYLING */
+.trustee-pic {
+  width: 578px;
+  height: auto;
+  margin-top: 40px;
+
+  width: 295px;
+  height: 397px;
+  margin-top: 3%;
+}
+
+.trustee-pic img {
+  border-radius: 19px;
+}
+
+.trustee-info p {
+  width: 1100px;
+  text-align: justify;
+}
+
+/* KNOW MORE STYLING */
+.know-more-table {
+  width: 1100px;
+  text-align: center;
+}
+
+.know-more-table,
+.know-more-table td {
+  text-align: center;
+}
+
+.know-more-table img {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -80px;
+  z-index: 10;
+  border-radius: 100px;
+  border: 10px solid black;
+}
+
+.bg-rectangle-know-more {
+  width: 100%;
+  height: 100px;
+  z-index: -1;
+}
+
+.decor-know-more {
+  width: 100%;
+  height: 7px;
+  z-index: -1;
+  background-color: #dddddd;
 }
